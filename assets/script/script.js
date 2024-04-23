@@ -4,8 +4,10 @@ async function LoadShopItems() {
     const response = await fetch('database.json');
     const names = await response.json();
 
-    console.log(names);
     ReloadCard(names);
+
+    AddEventOnBtn();
+    ChangeMode();
 }
 
 LoadShopItems();
@@ -30,25 +32,23 @@ const AddShop = (e) => {
 function ChangeMode() {
     let ModeObject = document.getElementsByClassName("mode");
 
-    ModeObject.forEach(i => {
-        let dark = i.classList.contains('Dark');
-        let light = i.classList.contains('Light');
+    for (let i = 0; i < ModeObject.length;i++){
+        let dark = ModeObject[i].classList.contains('Dark');
+        let light = ModeObject[i].classList.contains('Light');
 
-        if (!dark && !light) { Get("mode", "Light") == "Light" ? i.classList.add('Light') : i.classList.add('Dark') ; } else {
-            if (dark) { i.classList.add('Light'); i.classList.remove('Dark')}
-            if (light) { i.classList.add('Dark'); i.classList.remove('Light') }
+        if (!dark && !light) { Get("mode", "Light") == "Light" ? ModeObject[i].classList.add('Light') : ModeObject[i].classList.add('Dark') ; } else {
+            if (dark) { ModeObject[i].classList.add('Light'); ModeObject[i].classList.remove('Dark')}
+            if (light) { ModeObject[i].classList.add('Dark'); ModeObject[i].classList.remove('Light') }
             
             Set("mode", dark ? "Light" : "Dark");
         }
-    });
+    }
 }
 
 
 function ReloadCard(Items) {
     let parent = document.getElementById("cards");
 
-    console.log(Items)
-    console.log(Items.plats)
 
     for (let i = 0; i < Items.plats.length; i++) {
 
@@ -102,8 +102,10 @@ function FindClass(_parent,_class) {
 }
 */
 
-let btnpanier = document.getElementsByClassName("btnpanier");
-for (let i = 0; i < btnpanier.length; i++) {
-    btnpanier[i].addEventListener('click', AddShop);
-    btnpanier[i].id = i;
+function AddEventOnBtn() {
+    let btnpanier = document.getElementsByClassName("btnpanier");
+    for (let i = 0; i < btnpanier.length; i++) {
+        btnpanier[i].addEventListener('click', AddShop);
+        btnpanier[i].id = i;
+    }
 }
