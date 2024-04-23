@@ -1,0 +1,267 @@
+{
+    "catégories" : [
+        {
+            "titre": "viennoiseries"
+        },
+        {
+            "titre": "pain grillé"
+        },
+        {
+            "titre": "oeufs"
+        },
+        {
+            "titre": "boissons"
+        },
+        {
+            "titre": "fruits"
+        },
+        {
+            "titre": "bagels"       
+        },
+        {
+            "titre": "muffins"
+        },
+        {
+            "titre": "divers"
+        }
+    ],
+
+    "plats": [
+
+        {
+            "nom": "pain au chocolat",
+            "prix": "0.75€",
+            "image": "https://images.unsplash.com/photo-1613929231151-d7571591259e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore", "végétarien"],
+            "catégorie": "viennoiseries"
+         }, 
+         {
+            "nom": "croissant",
+            "prix": "0.75€",
+            "image": "https://unsplash.com/fr/photos/croissant-sur-le-dessus-dun-plateau-en-acier-inoxydable-lE5O9DktAQY",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore", "végétarien"],
+            "catégorie" : "viennoiseries"
+        },
+        {
+            "nom": "omelette",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/une-assiette-de-nourriture-frite-oqzVlrjVeAI",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore","végétarien"],
+            "catégorie" : "oeufs"
+        },
+        {
+            "nom": "oeufs sur le plat",
+            "prix": "2€",
+            "image": "https://unsplash.com/fr/photos/une-assiette-de-nourriture-S_8q6XQXn4s",
+            "allergènes": "",
+            "régime alimentaire": ["végétarien","omnivore"],
+            "catégorie" : "oeufs"
+        },
+        {
+            "nom": "oeufs bénédicte",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/pain-brun-sur-assiette-en-ceramique-bleue-W7yjuNoAe74",
+            "allergènes": "",
+            "régime alimentaire": ["végétarien","omnivore"],
+            "catégorie" : "oeufs"
+        }, 
+        {
+            "nom": "toasts avec oeufs et saucisses",
+            "prix": "6€",
+            "image": "https://unsplash.com/fr/photos/plateau-de-pain-et-bacon-a-cote-de-la-cafetiere-a-piston-shmr_KoBQXQ",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : ["pain grillé", "oeufs"]
+        },
+        {
+            "nom": "toasts à l'avocat",
+            "prix": "6€",
+            "image": "https://unsplash.com/fr/photos/plat-brun-et-vert-sur-assiette-noire-SaWYeuOqEdo",
+            "allergènes": "",
+            "régime alimentaire": ["vegan", "omnivore", "végétarien"],
+            "catégorie" : "pain grillé"
+        },
+        {
+            "nom": "toasts à la confiture",
+            "prix": "4€",
+            "image": "https://unsplash.com/fr/photos/sandwich-grille-a-la-confiture-dorange-9RGPG_ksS3Q",
+            "allergènes": "",
+            "régime alimentaire":[ "végétarien","vegan","omnivore"],
+            "catégorie" : "pain grillé"
+        },
+        {
+            "nom": "toasts avec du fromage",
+            "prix": "4€",
+            "image": "https://unsplash.com/fr/photos/pain-fourre-au-fromage-sur-assiette-en-ceramique-blanche-ZB8NK8cB4EE",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore","végétarien"],
+            "catégorie" : "pain grillé"
+         },
+         {
+            "nom": "toast au saumon fumé",
+            "prix": "7€",
+            "image": "https://unsplash.com/fr/photos/pain-tranche-avec-des-tranches-de-tomate-sur-une-planche-a-decouper-en-bois-brun-CmFJ4IzEf7Y",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : "pain grillé"
+        },
+        {
+            "nom": "café",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/shallow-focus-photography-of-coffee-late-in-mug-on-table-zUNs99PGDg0",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","végétarien","omnivore"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "thé",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/theiere-en-ceramique-blanche-et-marron-sur-plateau-en-bois-m-gqDRzbJLQ",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "cacao",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/tasse-blanche-avec-un-liquide-brun-garni-de-guimauves-RTtMzY31DeI",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "jus de fruit",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "https://unsplash.com/fr/photos/jus-dorange-dans-un-verre-transparent-TmOGarNOGFs",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "salade de fruits de saisons",
+            "prix": "6€",
+            "image": "https://unsplash.com/fr/photos/bol-de-fruits-tranches-sur-textile-blanc-_Zn_7FzoL1w",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "fruits"
+        },
+        {
+            "nom": "flocons d'avoine avec fruits de saisons",
+            "prix": "6€",
+            "image": "",
+            "allergènes": "https://unsplash.com/fr/photos/photographie-a-plat-de-fruits-sur-assiette-mmsQUgMLqUo",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "fruits"
+        },
+        {
+            "nom": "pancakes avec fruits de saisons",
+            "prix": "6€",
+            "image": "https://unsplash.com/fr/photos/fraise-avec-petits-pains-dans-lassiette-Ha0y277_aQg",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "fruits"
+        },
+        {
+            "nom": "bagel au fromage",
+            "prix": "5€",
+            "image": "https://unsplash.com/fr/photos/un-bagel-avec-une-bouchee-retiree-6dlyyWbspqA",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore", "végétarien"],
+            "catégorie" : "bagels"
+        },
+        {
+            "nom": "bagel au saumon",
+            "prix": "6€",
+            "image": "https://unsplash.com/fr/photos/burger-sur-assiette-en-ceramique-blanche-dFubWB-pnik",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : "bagels"
+        },
+        {
+            "nom": "bagel au jambon et au fromage",
+            "prix": "5€",
+            "image": "https://unsplash.com/fr/photos/photographie-dinclinaison-de-hamburger-sur-un-tampon-brun-rdPCVPVxpAg",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : "bagels"
+        },
+        {
+            "nom": "bagel au jambon",
+            "prix": "5€",
+            "image": "",
+            "allergènes": "https://unsplash.com/fr/photos/burger-sur-assiette-en-ceramique-blanche-XOv2hyvyLmE",
+            "régime alimentaire": "omnivore" ,
+            "catégorie" : "bagels"
+        },
+        
+        {
+            "nom": "muffin à la vanille",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/muffin-cuit-sur-une-surface-beige-d8GDJalt_BE",
+            "allergènes": "",
+            "régime alimentaire":  ["vegan","omnivore","végétarien"],
+            "catégorie" : "muffins"
+        },
+        {
+            "nom": "muffin à la myrtille",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/cupcakes-bruns-sur-assiette-en-ceramique-blanche-5RQffqRkmWQ",
+            "allergènes": "",
+            "régime alimentaire":  ["vegan","omnivore","végétarien"],
+            "catégorie" : "muffins"
+        },
+        {
+            "nom": "muffin au chocolat",
+            "prix": "3€",
+            "image": "https://images.unsplash.com/photo-1637861004744-0f846ef2df40?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "allergènes": "",
+            "régime alimentaire":  ["vegan","omnivore","végétarien"],
+            "catégorie" : "muffins"
+        },
+        {
+            "nom": "pain perdu",
+            "prix": "5€",
+            "image": "https://unsplash.com/fr/photos/pain-grille-aux-myrtilles-sur-assiette-noire-zcUgjyqEwe8",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "crêpes",
+            "prix": "5€",
+            "image": "https://unsplash.com/fr/photos/crepe-a-la-creme-glacee-et-au-sirop-1ZTccDpF71k",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "donuts",
+            "prix": "3€",
+            "image": "https://unsplash.com/fr/photos/beignet-avec-garnitures-q54Oxq44MZs",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "muesli",
+            "prix": "4€",
+            "image": "https://unsplash.com/fr/photos/bol-en-bois-brun-avec-de-la-poudre-brune-vLHzjRNFbEQ",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "banana bread",
+            "prix": "4€",
+            "image": "https://unsplash.com/fr/photos/pain-tranche-sur-planche-a-decouper-blanche-byaVdSDtpx0",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        }
+
+    ]
+}
+
