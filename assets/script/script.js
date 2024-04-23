@@ -1,6 +1,16 @@
 let Shop = Array.from(Get("shop", []));
 
-ReloadCard();
+async function LoadShopItems() {
+    const response = await fetch('database.json');
+    const names = await response.json();
+
+    console.log(names);
+    ReloadCard(names);
+}
+
+LoadShopItems();
+
+
 
 
 
@@ -34,26 +44,29 @@ function ChangeMode() {
 }
 
 
-function ReloadCard() {
+function ReloadCard(Items) {
     let parent = document.getElementById("cards");
 
-    for (let i = 0; i < 1/*Booster.length*/; i++) {
+    console.log(Items)
+    console.log(Items.plats)
+
+    for (let i = 0; i < Items.plats.length; i++) {
 
         parent.innerHTML = parent.innerHTML +
             '<div class="card mode">'+
             '<div class="cardheader mode">'+
             '<figure>'+
-            '<img class="mode" src="https://assets.afcdn.com/recipe/20181107/83668_w1024h768c1cx2880cy1920cxt0cyt0cxb5760cyb3840.jpg" alt="">'+
+            '<img class="mode" src="' + Items.plats[i].image + '" alt="">'+
             '</figure>'+
             '</div>'+
             '<div class="cardmain mode">'+
-            '<div class="title mode">Lorem ipsum dolor sit amet </div>'+
-            '<div class="allergen mode ">Lorem ipsum dolor sit amet </div>'+
+            '<div class="title mode">'+ Items.plats[i].nom +'</div>'+
+            '<div class="allergen mode ">' + Items.plats[i].allergènes +'</div>'+
             '<div class="diet mode ">Lorem ipsum dolor sit amet </div>'+
             '</div>'+
             '<div class="cardfooter mode">'+
             '<button class="btnpanier mode">Panier</button>'+
-            '<div class="price mode">5.00</div>'*
+            '<div class="price mode">' + Items.plats[i].prix + '</div>'*
             '</div>'+
             '</div>'
             ;
