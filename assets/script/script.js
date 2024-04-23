@@ -50,7 +50,14 @@ function ReloadCard(Items) {
     let parent = document.getElementById("cards");
 
 
+
     for (let i = 0; i < Items.plats.length; i++) {
+
+        let allergenImage = "";
+        for (let a = 0; a < Items.plats[i].allergènes.length; a++) {
+            allergenImage = allergenImage + '<img src="' + Items.plats[i].allergènes[a] + '">'
+        }
+
 
         parent.innerHTML = parent.innerHTML +
             '<div class="card mode">'+
@@ -60,9 +67,9 @@ function ReloadCard(Items) {
             '</figure>'+
             '</div>'+
             '<div class="cardmain mode">'+
-            '<div class="title mode">'+ Items.plats[i].nom +'</div>'+
-            '<div class="allergen mode ">' + Items.plats[i].allergènes +'</div>'+
-            '<div class="diet mode ">Lorem ipsum dolor sit amet </div>'+
+            '<div class="title mode">' + Items.plats[i].nom + '</div>' +
+            '<div class="allergen mode ">' + allergenImage +'</div>'+
+            '<div class="diet mode ">Lorem ipsum dolor sit amet</div>'+
             '</div>'+
             '<div class="cardfooter mode">'+
             '<button class="btnpanier mode">Panier</button>'+
