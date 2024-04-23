@@ -1,0 +1,63 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+section {
+  padding: 20px 20px; }
+
+.card {
+  width: 320px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .card .cardheader figure {
+    width: 320px;
+    height: 200px; }
+    .card .cardheader figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+  .card .cardmain {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+    .card .cardmain .title {
+      width: 80%;
+      height: 40%;
+      padding: 5px 0;
+      font-size: 1.5rem; }
+    .card .cardmain .allergen {
+      width: 80%;
+      height: 15%;
+      padding: 5px 0;
+      font-size: 1rem; }
+    .card .cardmain .diet {
+      width: 80%;
+      height: 45%;
+      padding: 5px 0;
+      font-size: 1rem; }
+  .card .cardfooter {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .card .cardfooter button {
+      padding: 5px 30px; }
+    .card .cardfooter .price {
+      font-size: 2rem; }
+      .card .cardfooter .price:after {
+        content: '€';
+        margin-left: 5px; }
+
+/*# sourceMappingURL=card.css.map */
