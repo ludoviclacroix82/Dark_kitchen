@@ -1,0 +1,267 @@
+{
+    "catégories" : [
+        {
+            "titre": "viennoiseries"
+        },
+        {
+            "titre": "pain grillé"
+        },
+        {
+            "titre": "oeufs"
+        },
+        {
+            "titre": "boissons"
+        },
+        {
+            "titre": "fruits"
+        },
+        {
+            "titre": "bagels"       
+        },
+        {
+            "titre": "muffins"
+        },
+        {
+            "titre": "divers"
+        }
+    ],
+
+    "plats": [
+
+        {
+            "nom": "pain au chocolat",
+            "prix": "0.75€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore", "végétarien"],
+            "catégorie": "viennoiseries"
+         }, 
+         {
+            "nom": "croissant",
+            "prix": "0.75€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore", "végétarien"],
+            "catégorie" : "viennoiseries"
+        },
+        {
+            "nom": "omelette",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore","végétarien"],
+            "catégorie" : "oeufs"
+        },
+        {
+            "nom": "oeufs sur le plat",
+            "prix": "2€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["végétarien","omnivore"],
+            "catégorie" : "oeufs"
+        },
+        {
+            "nom": "oeufs bénédicte",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["végétarien","omnivore"],
+            "catégorie" : "oeufs"
+        }, 
+        {
+            "nom": "toasts avec oeufs et saucisses",
+            "prix": "6€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : ["pain grillé", "oeufs"]
+        },
+        {
+            "nom": "toasts à l'avocat",
+            "prix": "6€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan", "omnivore", "végétarien"],
+            "catégorie" : "pain grillé"
+        },
+        {
+            "nom": "toasts à la confiture",
+            "prix": "4€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire":[ "végétarien","vegan","omnivore"],
+            "catégorie" : "pain grillé"
+        },
+        {
+            "nom": "toasts avec du fromage",
+            "prix": "4€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore","végétarien"],
+            "catégorie" : "pain grillé"
+         },
+         {
+            "nom": "toast au saumon fumé",
+            "prix": "7€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : "pain grillé"
+        },
+        {
+            "nom": "café",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","végétarien","omnivore"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "thé",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "cacao",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "jus de fruit",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "boissons"
+        },
+        {
+            "nom": "salade de fruits de saisons",
+            "prix": "6€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "fruits"
+        },
+        {
+            "nom": "flocons d'avoine avec fruits de saisons",
+            "prix": "6€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "fruits"
+        },
+        {
+            "nom": "pancakes avec fruits de saisons",
+            "prix": "6€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "fruits"
+        },
+        {
+            "nom": "bagel au fromage",
+            "prix": "5€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["omnivore", "végétarien"],
+            "catégorie" : "bagels"
+        },
+        {
+            "nom": "bagel au saumon",
+            "prix": "6€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : "bagels"
+        },
+        {
+            "nom": "bagel au jambon et au fromage",
+            "prix": "5€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": "omnivore",
+            "catégorie" : "bagels"
+        },
+        {
+            "nom": "bagel au jambon",
+            "prix": "5€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": "omnivore" ,
+            "catégorie" : "bagels"
+        },
+        
+        {
+            "nom": "muffin à la vanille",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire":  ["vegan","omnivore","végétarien"],
+            "catégorie" : "muffins"
+        },
+        {
+            "nom": "muffin à la myrtille",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire":  ["vegan","omnivore","végétarien"],
+            "catégorie" : "muffins"
+        },
+        {
+            "nom": "muffin au chocolat",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire":  ["vegan","omnivore","végétarien"],
+            "catégorie" : "muffins"
+        },
+        {
+            "nom": "pain perdu",
+            "prix": "5€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "crêpes",
+            "prix": "5€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "donuts",
+            "prix": "3€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "muesli",
+            "prix": "4€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        },
+        {
+            "nom": "banana bread",
+            "prix": "4€",
+            "image": "",
+            "allergènes": "",
+            "régime alimentaire": ["vegan","omnivore","végétarien"],
+            "catégorie" : "divers"
+        }
+
+    ]
+}
+
