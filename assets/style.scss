@@ -112,10 +112,17 @@ $lightgreen: #EDF3D0;
 
     #filters {
       display:flex;
-
-      label {
-        height: 2rem;
-    }
+  
+      .filter {
+        label {
+          height: 2rem;
+          transition: filter 0.3s ease-in-out;
+    
+          & + input[type="checkbox"]:checked + & {
+            filter: grayscale(100%);
+          }
+        }
+      }
     }
     
     #cards {
@@ -177,9 +184,6 @@ $lightgreen: #EDF3D0;
                 font-size: 3.5vh;
                 line-height: 3.7vh;
 
-                .title:first-letter {
-                  text-transform: uppercase;
-                }
             }
             .allergen{
                 width: 80%;

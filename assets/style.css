@@ -100,8 +100,12 @@ main h1 {
 main #filters {
   display: flex;
 }
-main #filters label {
+main #filters .filter label {
   height: 2rem;
+  transition: filter 0.3s ease-in-out;
+}
+main #filters .filter label + input[type=checkbox]:checked + main #filters .filter label {
+  filter: grayscale(100%);
 }
 main #cards {
   padding: 2rem;
@@ -159,9 +163,6 @@ main #cards .card .cardmain .title {
   padding: 5px 0;
   font-size: 3.5vh;
   line-height: 3.7vh;
-}
-main #cards .card .cardmain .title .title:first-letter {
-  text-transform: uppercase;
 }
 main #cards .card .cardmain .allergen {
   width: 80%;
