@@ -1,6 +1,7 @@
 //COLORS
 $lightgray: #F2F1EF;
 $cream: #F6E8D6;
+$darkbrown: #2a251f;
 $pink: #FCD2BA;
 $middlebrown: #DEB083;
 $darkgray: #2e2e2b;
@@ -94,8 +95,23 @@ $lightgreen: #EDF3D0;
     h1 {
       text-align:center;
       font-weight: 100;
-      margin-top:-1rem;
+      line-height: 1.8rem;
+      margin-bottom: 2rem;
     }
+
+    section{
+      padding:2rem;
+      
+      .Light {
+        border: solid 3px $darkbrown;
+      }
+  
+      .Dark {
+        border: solid 3px $cream;
+      }
+    }
+
+    
   }
 
   }
