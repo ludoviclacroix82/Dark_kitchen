@@ -41,7 +41,6 @@ function ChangeMode() {
 
     let btnswitch = document.getElementById("switchMode");
     btnswitch.checked = Get("mode", "Light") == "Dark" ? true : false;
-    console.log(btnswitch.checked);
 }
 
 function LoadDarkMode() {
@@ -53,6 +52,9 @@ function LoadDarkMode() {
 
         if (!dark && !light) { Get("mode", "Light") == "Light" ? ModeObject[i].classList.add('Light') : ModeObject[i].classList.add('Dark'); }
     }
+
+    let btnswitch = document.getElementById("switchMode");
+    btnswitch.checked = Get("mode", "Light") == "Dark" ? true : false;
 }
 
 function Checkbock() {
@@ -61,14 +63,16 @@ function Checkbock() {
 
     for (const a of _){
         if (a.checked) {
-            if (parseInt(a.id) == 1) { Filter.push("All"); }
-            if (parseInt(a.id) == 2) { Filter.push(""); }
-            if (parseInt(a.id) == 3) { Filter.push(""); }
-            if (parseInt(a.id) == 4) { Filter.push(""); }
-            if (parseInt(a.id) == 5) { Filter.push(""); }
-            if (parseInt(a.id) == 6) { Filter.push(""); }
-            if (parseInt(a.id) == 7) { Filter.push(""); }
-            if (parseInt(a.id) == 8) { Filter.push(""); }
+            if (parseInt(a.id) == 1) { Filter.push("assets/pictures/allergen/amande.png"); }
+            if (parseInt(a.id) == 2) { Filter.push("assets/pictures/allergen/crabe.png"); }
+            if (parseInt(a.id) == 3) { Filter.push("assets/pictures/allergen/du-ble.png"); }
+            if (parseInt(a.id) == 4) { Filter.push("assets/pictures/allergen/lait.png"); }
+            if (parseInt(a.id) == 5) { Filter.push("assets/pictures/allergen/mais.png"); }
+            if (parseInt(a.id) == 6) { Filter.push("assets/pictures/allergen/noyau.png"); }
+            if (parseInt(a.id) == 7) { Filter.push("assets/pictures/allergen/oeuf.png"); }
+            if (parseInt(a.id) == 8) { Filter.push("assets/pictures/allergen/poisson.png"); }
+            if (parseInt(a.id) == 9) { Filter.push("assets/pictures/eating/du-boeuf.png"); }
+            if (parseInt(a.id) == 10) { Filter.push("assets/pictures/eating/vegetarien.png"); }
         }
         a.addEventListener('click', Reload);
     }
@@ -113,7 +117,7 @@ function ReloadCard(Items) {
                 '</div>' +
                 '<div class="cardfooter mode">' +
                 '<button class="btnpanier mode" id="'+i+'">Panier</button>' +
-                '<div class="price mode">' + Items.plats[i].prix + '€</div>' +
+                '<div class="price mode">' + Items.plats[i].prix + '</div>' +
                 '</div>' +
                 '</div>';
         }
