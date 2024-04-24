@@ -1,6 +1,18 @@
 let Shop = Array.from(Get("shop", []));
 
-ReloadCard();
+async function LoadShopItems() {
+    const response = await fetch('database.json');
+    const names = await response.json();
+
+    ReloadCard(names);
+
+    AddEventOnBtn();
+    ChangeMode();
+}
+
+LoadShopItems();
+
+
 
 
 
@@ -20,40 +32,48 @@ const AddShop = (e) => {
 function ChangeMode() {
     let ModeObject = document.getElementsByClassName("mode");
 
-    ModeObject.forEach(i => {
-        let dark = i.classList.contains('Dark');
-        let light = i.classList.contains('Light');
+    for (let i = 0; i < ModeObject.length;i++){
+        let dark = ModeObject[i].classList.contains('Dark');
+        let light = ModeObject[i].classList.contains('Light');
 
-        if (!dark && !light) { Get("mode", "Light") == "Light" ? i.classList.add('Light') : i.classList.add('Dark') ; } else {
-            if (dark) { i.classList.add('Light'); i.classList.remove('Dark')}
-            if (light) { i.classList.add('Dark'); i.classList.remove('Light') }
+        if (!dark && !light) { Get("mode", "Light") == "Light" ? ModeObject[i].classList.add('Light') : ModeObject[i].classList.add('Dark') ; } else {
+            if (dark) { ModeObject[i].classList.add('Light'); ModeObject[i].classList.remove('Dark')}
+            if (light) { ModeObject[i].classList.add('Dark'); ModeObject[i].classList.remove('Light') }
             
             Set("mode", dark ? "Light" : "Dark");
         }
-    });
+    }
 }
 
 
-function ReloadCard() {
+function ReloadCard(Items) {
     let parent = document.getElementById("cards");
 
-    for (let i = 0; i < 1/*Booster.length*/; i++) {
+
+
+    for (let i = 0; i < Items.plats.length; i++) {
+
+        let allergenImage = "";
+        for (let a = 0; a < Items.plats[i].allergènes.length; a++) {
+            allergenImage = allergenImage + '<img src="' + Items.plats[i].allergènes[a] + '">'
+        }
+
 
         parent.innerHTML = parent.innerHTML +
             '<div class="card mode">'+
             '<div class="cardheader mode">'+
             '<figure>'+
-            '<img class="mode" src="https://assets.afcdn.com/recipe/20181107/83668_w1024h768c1cx2880cy1920cxt0cyt0cxb5760cyb3840.jpg" alt="">'+
+            '<img class="mode" src="' + Items.plats[i].image + '" alt="">'+
             '</figure>'+
             '</div>'+
             '<div class="cardmain mode">'+
-            '<div class="title mode">Lorem ipsum dolor sit amet </div>'+
-            '<div class="allergen mode ">Lorem ipsum dolor sit amet </div>'+
-            '<div class="diet mode ">Lorem ipsum dolor sit amet </div>'+
+            '<div class="title mode">' + Items.plats[i].nom + '</div>' +
+            '<div class="allergen mode ">' + allergenImage +'</div>'+
+            '<div class="diet mode ">Lorem ipsum dolor sit amet</div>'+
             '</div>'+
             '<div class="cardfooter mode">'+
             '<button class="btnpanier mode">Panier</button>'+
-            '<div class="price mode">5.00</div>'*
+            '<div class="price mode">' + Items.plats[i].prix + '</div>'*
             '</div>'+
             '</div>'
             ;
@@ -89,8 +109,10 @@ function FindClass(_parent,_class) {
 }
 */
 
-let btnpanier = document.getElementsByClassName("btnpanier");
-for (let i = 0; i < btnpanier.length; i++) {
-    btnpanier[i].addEventListener('click', AddShop);
-    btnpanier[i].id = i;
+function AddEventOnBtn() {
+    let btnpanier = document.getElementsByClassName("btnpanier");
+    for (let i = 0; i < btnpanier.length; i++) {
+        btnpanier[i].addEventListener('click', AddShop);
+        btnpanier[i].id = i;
+    }
 }
