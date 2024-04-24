@@ -55,6 +55,28 @@ function LoadDarkMode() {
     }
 }
 
+function Checkbock() {
+    let _ = document.getElementsByClassName("filter");
+    let Filter = [];
+
+    for (const a of _){
+        if (a.checked) {
+            if (parseInt(a.id) == 1) { Filter.push("All"); }
+            if (parseInt(a.id) == 2) { Filter.push(""); }
+            if (parseInt(a.id) == 3) { Filter.push(""); }
+            if (parseInt(a.id) == 4) { Filter.push(""); }
+            if (parseInt(a.id) == 5) { Filter.push(""); }
+            if (parseInt(a.id) == 6) { Filter.push(""); }
+            if (parseInt(a.id) == 7) { Filter.push(""); }
+            if (parseInt(a.id) == 8) { Filter.push(""); }
+        }
+        a.addEventListener('click', Reload);
+    }
+
+    console.log(Filter);
+
+    return Filter;
+}
 
 function ReloadCard(Items) {
     let parent = document.getElementById("cards");
@@ -65,7 +87,7 @@ function ReloadCard(Items) {
 
         //console.log(CardFiltreValue);
 
-        if (Filtre(["All"], CardFiltreValue)) {
+        if (Filtre(Checkbock(), CardFiltreValue)) {
             let allergenImage = "";
             for (let a = 0; a < Items.plats[i].allergènes.length; a++) {
                 allergenImage = allergenImage + '<img src="' + Items.plats[i].allergènes[a] + '">'
@@ -73,7 +95,7 @@ function ReloadCard(Items) {
 
             let Diet = "";
             for (let a = 0; a < Items.plats[i].regimealimentaire.length; a++) {
-                Diet = Diet + '[' + Items.plats[i].regimealimentaire[a] + '] '
+                Diet = Diet + '<img src="' + Items.plats[i].regimealimentaire[a] + '">'
             }
 
 
@@ -246,6 +268,10 @@ const AddShop = (e) => {
 const switchMode = (e) => {
     console.log();
     ChangeMode();
+}
+
+const Reload = (e) => {
+    LoadShopItems();
 }
 
 const rmvShopItem = (e) => {
