@@ -8,22 +8,20 @@ async function LoadShopItems() {
     LoadShopItemsOnCard();
 }
 
-async function LoadShopItemsOnCard() {
+async function LoadShopItemsOnCard(first) {
     const response = await fetch('database.json');
     const names = await response.json();
 
+    trie();
     ReloadShoppingCard(names);
 
 
     AddEventOnBtn();
     AddEventOnBtnDark();
-    ChangeMode();
+    LoadDarkMode();
 }
 
-LoadShopItems();
-
-
-
+LoadShopItems(true);
 
 
 function ChangeMode() {
@@ -44,6 +42,17 @@ function ChangeMode() {
     let btnswitch = document.getElementById("switchMode");
     btnswitch.checked = Get("mode", "Light") == "Dark" ? true : false;
     console.log(btnswitch.checked);
+}
+
+function LoadDarkMode() {
+    let ModeObject = document.getElementsByClassName("mode");
+
+    for (let i = 0; i < ModeObject.length; i++) {
+        let dark = ModeObject[i].classList.contains('Dark');
+        let light = ModeObject[i].classList.contains('Light');
+
+        if (!dark && !light) { Get("mode", "Light") == "Light" ? ModeObject[i].classList.add('Light') : ModeObject[i].classList.add('Dark'); }
+    }
 }
 
 
@@ -122,6 +131,7 @@ function ReloadShoppingCard(_json) {
         if (!Exist) { _DrawItems.push({ id:ShopArray[i],nbr:1})}
     }
 
+    let Tot = 0;
     for (let i = 0; i < _DrawItems.length; i++) { 
         _panier = _panier +
             '<div class="mode" id="table1">' +
@@ -129,22 +139,27 @@ function ReloadShoppingCard(_json) {
             '<div>' + _DrawItems[i].nbr +'</div>' +
             '<div>' + _json.plats[_DrawItems[i].id].prix +'€</div>' +
             '<div>' + (_DrawItems[i].nbr * _json.plats[_DrawItems[i].id].prix) + '€</div>' +
-            '<div>Remove</div>' +
+            '<button class="mode btnShopRemove" id="' + _DrawItems[i].id + '">Remove</button>' +
             '</div>';
+        
+        Tot += (_DrawItems[i].nbr * _json.plats[_DrawItems[i].id].prix);
     }
 
     _globalHtml = _globalHtml + _panier + '</div>'+
-        '<p class="mode" id="total">'+
-        '</p>'+
+        '<p class="mode" id="total">' + Tot + '€</p>'+
         '<button class="mode" id="btn_order">Commander</button>'+
         '</div>';
     
     parent.innerHTML = _globalHtml;
+
+    let btnShopRemove = document.getElementsByClassName("btnShopRemove");
+    for (let i = 0; i < btnShopRemove.length; i++){
+        btnShopRemove[i].addEventListener('click', rmvShopItem);
+    }
 }
 
 function Filtre(_MyCondition,_Value) {
     let pass = false;
-
     for (let i = 0; i < _MyCondition.length; i++){
         for (let a = 0; a < _Value.length; a++) {
             if (_MyCondition[i] == _Value[a] || _MyCondition[i] == "All") {
@@ -152,9 +167,8 @@ function Filtre(_MyCondition,_Value) {
             }
         }
     }
-
     return pass;
-}
+    }
 
 
 function Get(name, ini) {  // prend une data dans les cookies du site et sauvegarde le ini si il y en a pas
@@ -184,6 +198,23 @@ function FindClass(_parent,_class) {
         }
 }
 */
+
+function trie() {
+    let TempGrp = [];
+    _shop = Array.from(Get("shop", []));
+
+    for (let i = 0; i < 99; i++) {
+        for (let a = 0; a < _shop.length; a++) {
+            console.log(parseInt(_shop[a]), parseInt(i))
+            if (parseInt(_shop[a]) == parseInt(i)) {
+                TempGrp.push(parseInt(_shop[a]));
+            }
+        }
+    }
+
+    Set("shop", TempGrp);
+    Shop = Array.from(Get("shop", []));
+}
 
 
 function AddEventOnBtn() { 
@@ -215,4 +246,22 @@ const AddShop = (e) => {
 const switchMode = (e) => {
     console.log();
     ChangeMode();
+}
+
+const rmvShopItem = (e) => {
+    _shop = Array.from(Get("shop", []));
+
+    console.log("remove to shop: " + e.currentTarget.id);
+
+    for (let i = 0; i < _shop.length; i++) {
+        if (parseInt(_shop[i]) == parseInt(e.currentTarget.id)) {
+            _shop.splice(i, 1)
+            i = 9999999999;
+        }
+    }
+
+    Set("shop", _shop);
+    Shop = Array.from(Get("shop", []));
+
+    LoadShopItemsOnCard();
 }
