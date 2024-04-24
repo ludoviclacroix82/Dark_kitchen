@@ -185,16 +185,19 @@ function ReloadShoppingCard(_json) {
 }
 
 function Filtre(_MyCondition,_Value) {
-    let pass = false;
+    let pass = true;
     for (let i = 0; i < _MyCondition.length; i++){
+        let Check = false;
         for (let a = 0; a < _Value.length; a++) {
-            if (_MyCondition[i] == _Value[a] || _MyCondition[i] == "All") {
-                pass = true;
+            if (_MyCondition[i] == _Value[a]) {
+                Check = true;
             }
         }
+        if (Check) { pass = false; }
     }
+
     return pass;
-    }
+}
 
 
 function Get(name, ini) {  // prend une data dans les cookies du site et sauvegarde le ini si il y en a pas
@@ -237,6 +240,7 @@ function trie() {
             }
         }
     }
+
 
     Set("shop", TempGrp);
     Shop = Array.from(Get("shop", []));
