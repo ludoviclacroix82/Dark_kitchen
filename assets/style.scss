@@ -110,8 +110,12 @@ $lightgreen: #EDF3D0;
       margin-bottom: 2rem;
     }
 
-    label img {
+    #filters {
+      display:flex;
+
+      label {
         height: 2rem;
+    }
     }
     
     #cards {

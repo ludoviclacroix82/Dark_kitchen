@@ -97,7 +97,10 @@ main h1 {
   line-height: 1.8rem;
   margin-bottom: 2rem;
 }
-main label img {
+main #filters {
+  display: flex;
+}
+main #filters label {
   height: 2rem;
 }
 main #cards {
