@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body .Light {
   background-color: #F2F1EF;
   color: #2e2e2b;
@@ -112,5 +113,78 @@ main #cards.Dark {
   background-color: #2a251f;
 }
 main #cards .card {
-  height: 100vh;
-}/*# sourceMa/*# sourceMappingURL=style.css.map */
+  width: 20rem;
+  height: 28.75rem;
+  display: flex;
+  margin-bottom: 5vh;
+  flex-direction: column;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+main #cards .card .cardheader {
+  border-radius: 10%;
+}
+main #cards .card .cardheader figure {
+  width: 320px;
+  height: 200px;
+}
+main #cards .card .cardheader figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+main #cards .card .cardmain {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 5%;
+}
+main #cards .card .cardmain .title {
+  width: 80%;
+  height: 40%;
+  padding: 5px 0;
+  font-size: 1.5rem;
+}
+main #cards .card .cardmain .allergen {
+  width: 80%;
+  padding: 5px 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main #cards .card .cardmain .allergen img {
+  height: 2rem;
+}
+main #cards .card .cardmain .diet {
+  width: 80%;
+  height: 45%;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+main #cards .card .cardfooter {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main #cards .card .cardfooter button {
+  padding: 0.5rem 5rem;
+}
+main #cards .card .cardfooter .price {
+  font-size: 2rem;
+}
+main #cards .card .cardfooter .price:after {
+  content: "€";
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
