@@ -5,18 +5,29 @@ async function LoadShopItems() {
     const names = await response.json();
 
     ReloadCard(names);
+    LoadShopItemsOnCard();
+}
+
+async function LoadShopItemsOnCard() {
+    const response = await fetch('database.json');
+    const names = await response.json();
+
+    ReloadShoppingCard(names);
+
 
     AddEventOnBtn();
+    AddEventOnBtnDark();
     ChangeMode();
 }
 
 LoadShopItems();
 
 
+
+
+
 function ChangeMode() {
     let ModeObject = document.getElementsByClassName("mode");
-
-    let check = false;
 
     for (let i = 0; i < ModeObject.length;i++){
         let dark = ModeObject[i].classList.contains('Dark');
@@ -28,11 +39,11 @@ function ChangeMode() {
             
             Set("mode", dark ? "Light" : "Dark");
         }
-        check = light;
     }
 
     let btnswitch = document.getElementById("switchMode");
-    btnswitch.checked = check;
+    btnswitch.checked = Get("mode", "Light") == "Dark" ? true : false;
+    console.log(btnswitch.checked);
 }
 
 
@@ -41,7 +52,6 @@ function ReloadCard(Items) {
     parent.innerHTML = "";
 
     for (let i = 0; i < Items.plats.length; i++) {
-
         let CardFiltreValue = Items.plats[i].allergènes.concat(Items.plats[i].regimealimentaire);
 
         //console.log(CardFiltreValue);
@@ -79,6 +89,59 @@ function ReloadCard(Items) {
     }
 }
 
+function ReloadShoppingCard(_json) {
+    let parent = document.getElementById("shoppingcart");
+    parent.innerHTML = "";
+
+    _globalHtml = '<div class="mode" id="shopping">' +
+        '<h2>Liste de la commande</h2>' +
+        '<button class="mode" id="btn_close">x</button>' +
+        '<div class="panierheader">' +
+        '<div class="mode" id="table">' +
+        '<div>Produit</div>' +
+        '<div>Quantiter</div>' +
+        '<div>Prix</div>' +
+        '<div>Total</div>' +
+        '<div>Action</div>' +
+        '</div>' +
+        '</div>' +
+        '<div class="panierList" id="panierList">';
+    
+    let _panier = "";
+
+    let _DrawItems = [];
+    let ShopArray = Array.from(Get("shop", [])); 
+    for (let i = 0; i < ShopArray.length; i++) { 
+        let Exist = false;
+        for (let a = 0; a < _DrawItems.length; a++){
+            if (_DrawItems[a].id == ShopArray[i]) {
+                _DrawItems[a].nbr += 1;
+                Exist = true;
+            }
+        }
+        if (!Exist) { _DrawItems.push({ id:ShopArray[i],nbr:1})}
+    }
+
+    for (let i = 0; i < _DrawItems.length; i++) { 
+        _panier = _panier +
+            '<div class="mode" id="table1">' +
+            '<div>' + _json.plats[_DrawItems[i].id].nom +'</div>' +
+            '<div>' + _DrawItems[i].nbr +'</div>' +
+            '<div>' + _json.plats[_DrawItems[i].id].prix +'€</div>' +
+            '<div>' + (_DrawItems[i].nbr * _json.plats[_DrawItems[i].id].prix) + '€</div>' +
+            '<div>Remove</div>' +
+            '</div>';
+    }
+
+    _globalHtml = _globalHtml + _panier + '</div>'+
+        '<p class="mode" id="total">'+
+        '</p>'+
+        '<button class="mode" id="btn_order">Commander</button>'+
+        '</div>';
+    
+    parent.innerHTML = _globalHtml;
+}
+
 function Filtre(_MyCondition,_Value) {
     let pass = false;
 
@@ -86,7 +149,6 @@ function Filtre(_MyCondition,_Value) {
         for (let a = 0; a < _Value.length; a++) {
             if (_MyCondition[i] == _Value[a] || _MyCondition[i] == "All") {
                 pass = true;
-                //console.log("pass :" + _MyCondition[i] + " == " + _Value[a])
             }
         }
     }
@@ -134,6 +196,7 @@ function AddEventOnBtn() {
 function AddEventOnBtnDark() {
     let btnswitch = document.getElementById("switchMode");
     btnswitch.addEventListener('click', switchMode);
+    console.log(btnswitch);
 }
 
 
@@ -145,8 +208,11 @@ const AddShop = (e) => {
     _shop.push(e.currentTarget.id);
     Set("shop", _shop);
     Shop = Array.from(Get("shop", []));
+
+    LoadShopItemsOnCard();
 }
 
 const switchMode = (e) => {
+    console.log();
     ChangeMode();
 }

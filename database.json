@@ -30,7 +30,7 @@
 
         {
             "nom": "pain au chocolat",
-            "prix": "0.75€",
+            "prix": "0.75",
             "image": "assets/pictures/food/painauchocolat.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore", "végétarien"],
@@ -38,7 +38,7 @@
          }, 
          {
             "nom": "croissant",
-            "prix": "0.75€",
+            "prix": "0.75",
             "image": "assets/pictures/food/croissant.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore", "végétarien"],
@@ -46,7 +46,7 @@
         },
         {
             "nom": "omelette",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/omelet.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore","végétarien"],
@@ -54,7 +54,7 @@
         },
         {
             "nom": "oeufs sur le plat",
-            "prix": "2€",
+            "prix": "2",
             "image": "assets/pictures/food/sunnysideup.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["végétarien","omnivore"],
@@ -62,7 +62,7 @@
         },
         {
             "nom": "oeufs bénédicte",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/benedict.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["végétarien","omnivore"],
@@ -70,7 +70,7 @@
         }, 
         {
             "nom": "toasts avec oeufs et saucisses",
-            "prix": "6€",
+            "prix": "6",
             "image": "assets/pictures/food/fullenglish.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore"],
@@ -78,7 +78,7 @@
         },
         {
             "nom": "toasts à l'avocat",
-            "prix": "6€",
+            "prix": "6",
             "image": "assets/pictures/food/avocadotoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png"],
             "regimealimentaire": ["vegan", "omnivore", "végétarien"],
@@ -86,7 +86,7 @@
         },
         {
             "nom": "toasts à la confiture",
-            "prix": "4€",
+            "prix": "4",
             "image": "assets/pictures/food/marmeladetoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png"],
             "regimealimentaire":[ "végétarien","vegan","omnivore"],
@@ -94,7 +94,7 @@
         },
         {
             "nom": "toasts avec du fromage",
-            "prix": "4€",
+            "prix": "4",
             "image":"assets/pictures/food/cheesetoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png"],
             "regimealimentaire": ["omnivore","végétarien"],
@@ -102,7 +102,7 @@
          },
          {
             "nom": "toast au saumon fumé",
-            "prix": "7€",
+            "prix": "7",
             "image": "assets/pictures/food/salmontoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/poisson.png"],
             "regimealimentaire": ["omnivore"],
@@ -110,7 +110,7 @@
         },
         {
             "nom": "café",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/coffee.jpg",
             "allergènes": [],
             "regimealimentaire": ["vegan","végétarien","omnivore"],
@@ -118,7 +118,7 @@
         },
         {
             "nom": "thé",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/tea.jpg",
             "allergènes": [],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -126,7 +126,7 @@
         },
         {
             "nom": "cacao",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/hotcocoa.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -134,7 +134,7 @@
         },
         {
             "nom": "jus d'orange frais",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/orangejuice.jpg",
             "allergènes": [],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -142,7 +142,7 @@
         },
         {
             "nom": "salade de fruits de saisons",
-            "prix": "6€",
+            "prix": "6",
             "image": "assets/pictures/food/fruitsalad.jpg",
             "allergènes": [],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -150,7 +150,7 @@
         },
         {
             "nom": "flocons d'avoine avec fruits de saisons",
-            "prix": "6€",
+            "prix": "6",
             "image": "assets/pictures/food/fruitoats.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -158,7 +158,7 @@
         },
         {
             "nom": "pancakes avec fruits de saisons",
-            "prix": "6€",
+            "prix": "6",
             "image": "assets/pictures/food/fruitpancakes.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -166,7 +166,7 @@
         },
         {
             "nom": "bagel au fromage",
-            "prix": "5€",
+            "prix": "5",
             "image": "assets/pictures/food/cheesebagel.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore", "végétarien"],
@@ -174,7 +174,7 @@
         },
         {
             "nom": "bagel au saumon",
-            "prix": "6€",
+            "prix": "6",
             "image": "assets/pictures/food/salmonbagel.jpg",
             "allergènes": ["assets/pictures/allergen/poisson.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore"],
@@ -182,7 +182,7 @@
         },
         {
             "nom": "bagel au jambon et au fromage",
-            "prix": "5€",
+            "prix": "5",
             "image": "assets/pictures/food/hamcheesebagel.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore"],
@@ -190,7 +190,7 @@
         },
         {
             "nom": "bagel au jambon",
-            "prix": "5€",
+            "prix": "5",
             "image": "assets/pictures/food/hambagel.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["omnivore"] ,
@@ -199,7 +199,7 @@
         
         {
             "nom": "muffin à la vanille",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/vanillamuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire":  ["vegan","omnivore","végétarien"],
@@ -207,7 +207,7 @@
         },
         {
             "nom": "muffin à la myrtille",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/blueberrymuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire":  ["vegan","omnivore","végétarien"],
@@ -215,7 +215,7 @@
         },
         {
             "nom": "muffin au chocolat",
-            "prix": "3€",
+            "prix": "3",
             "image": "assets/pictures/food/chocolatemuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire":  ["vegan","omnivore","végétarien"],
@@ -223,7 +223,7 @@
         },
         {
             "nom": "pain perdu",
-            "prix": "5€",
+            "prix": "5",
             "image": "assets/pictures/food/frenchtoast.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -231,7 +231,7 @@
         },
         {
             "nom": "crêpes",
-            "prix": "5€",
+            "prix": "5",
             "image":"assets/pictures/food/crepes.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -239,7 +239,7 @@
         },
         {
             "nom": "donuts",
-            "prix": "3€",
+            "prix": "3",
             "image":"assets/pictures/food/donuts.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -247,7 +247,7 @@
         },
         {
             "nom": "muesli",
-            "prix": "4€",
+            "prix": "4",
             "image": "assets/pictures/food/muesli.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/amande.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
@@ -255,7 +255,7 @@
         },
         {
             "nom": "banana bread",
-            "prix": "4€",
+            "prix": "4",
             "image":"assets/pictures/food/bananabread.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png", "assets/pictures/allergen/amande.png"],
             "regimealimentaire": ["vegan","omnivore","végétarien"],
