@@ -117,7 +117,7 @@ function ReloadCard(Items) {
                 '</div>' +
                 '<div class="cardfooter mode">' +
                 '<button class="btnpanier mode" id="'+i+'">Panier</button>' +
-                '<div class="price mode">' + Items.plats[i].prix + '€</div>' +
+                '<div class="price mode">' + Items.plats[i].prix + '</div>' +
                 '</div>' +
                 '</div>';
         }
