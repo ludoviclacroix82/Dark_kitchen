@@ -98,9 +98,6 @@ $lightgreen: #EDF3D0;
       height : 30vh;
     }
     }
-
-  
-
   }
 
   main {
@@ -111,6 +108,10 @@ $lightgreen: #EDF3D0;
       font-weight: 100;
       line-height: 1.8rem;
       margin-bottom: 2rem;
+    }
+
+    label img {
+        height: 2rem;
     }
     
     #cards {
@@ -184,10 +185,17 @@ $lightgreen: #EDF3D0;
                 }
             }
             .diet{
-                width: 80%;
-                height: 45%;
-                padding: 5px 0;
-                font-size: 1rem;
+              width: 80%;
+              padding: 5px 0;
+              font-size: 1rem;
+              display:flex;
+              justify-content: space-around;
+              align-items:center;
+              margin-top:0.5rem;
+
+              img {
+                height:2rem;
+              }
             }
         }
         .cardfooter{

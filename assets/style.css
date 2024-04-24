@@ -97,6 +97,9 @@ main h1 {
   line-height: 1.8rem;
   margin-bottom: 2rem;
 }
+main label img {
+  height: 2rem;
+}
 main #cards {
   padding: 2rem;
   display: flex;
@@ -166,9 +169,15 @@ main #cards .card .cardmain .allergen img {
 }
 main #cards .card .cardmain .diet {
   width: 80%;
-  height: 45%;
   padding: 5px 0;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+main #cards .card .cardmain .diet img {
+  height: 2rem;
 }
 main #cards .card .cardfooter {
   width: 100%;
