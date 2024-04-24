@@ -1,3 +1,13 @@
+body .Light {
+  background-color: #F2F1EF;
+  color: #2e2e2b;
+}
+
+body .Dark {
+  background-color: #2e2e2b;
+  color: #F2F1EF;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -63,14 +73,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-body .Light {
-  background-color: #F2F1EF;
-  color: #2e2e2b;
-}
-body .Dark {
-  background-color: #2e2e2b;
-  color: #F2F1EF;
-}
 @media only screen and (max-width: 600px) {
   body {
     grid-template-columns: 1fr;
@@ -87,18 +89,19 @@ body header {
   justify-content: center;
   align-items: center;
 }
-body main h1 {
+
+main h1 {
   text-align: center;
   font-weight: 100;
   line-height: 1.8rem;
   margin-bottom: 2rem;
 }
-body main section {
+main #cards {
   padding: 2rem;
 }
-body main section .Light {
+main #cards.Light {
   border: solid 3px #2a251f;
 }
-body main section .Dark {
+main #cards.Dark {
   border: solid 3px #F6E8D6;
 }/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,17 @@ $middlebrown: #DEB083;
 $darkgray: #2e2e2b;
 $lightgreen: #EDF3D0;
 
+//LIGHT AND DARK
+%Light {
+  background-color:$lightgray;
+  color:$darkgray;
+}
+
+%Dark {
+  background-color:$darkgray;
+  color:$lightgray;
+}
+
 //RESET
 /*
   1. Use a more-intuitive box-sizing model.
@@ -67,13 +78,11 @@ $lightgreen: #EDF3D0;
     margin-right:auto;
 
     .Light {
-      background-color:$lightgray;
-      color:$darkgray;
+      @extend %Light;
     }
 
     .Dark {
-      background-color:$darkgray;
-      color:$lightgray;
+      @extend %Dark;
     }
 
         @media only screen and (max-width: 600px) {
@@ -91,6 +100,9 @@ $lightgreen: #EDF3D0;
     align-items: center;
     }
 
+  
+
+  }
   main {
     h1 {
       text-align:center;
@@ -98,23 +110,23 @@ $lightgreen: #EDF3D0;
       line-height: 1.8rem;
       margin-bottom: 2rem;
     }
-
-    section{
+    
+    #cards {
       padding:2rem;
-      
-      .Light {
+  
+      &.Light {
         border: solid 3px $darkbrown;
       }
   
-      .Dark {
+      &.Dark {
         border: solid 3px $cream;
       }
     }
+  
+  
+  
+  
 
     
   }
-
-  }
-
-
-
+  
