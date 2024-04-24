@@ -13,24 +13,10 @@ async function LoadShopItems() {
 LoadShopItems();
 
 
-
-
-
-
-
-
-const AddShop = (e) => {
-    _shop = Array.from(Get("shop", []));
-
-    console.log("Add to shop: " + e.currentTarget.id);
-
-    _shop.push(e.currentTarget.id);
-    Set("shop", _shop);
-    Shop = Array.from(Get("shop", []));
-}
-
 function ChangeMode() {
     let ModeObject = document.getElementsByClassName("mode");
+
+    let check = false;
 
     for (let i = 0; i < ModeObject.length;i++){
         let dark = ModeObject[i].classList.contains('Dark');
@@ -42,43 +28,66 @@ function ChangeMode() {
             
             Set("mode", dark ? "Light" : "Dark");
         }
+
+        check = light;
     }
+
+    let btnswitch = document.getElementById("switchMode");
+    btnswitch.checked = check;
 }
 
 
 function ReloadCard(Items) {
     let parent = document.getElementById("cards");
-
-
+    parent.innerHTML = "";
 
     for (let i = 0; i < Items.plats.length; i++) {
 
-        let allergenImage = "";
-        for (let a = 0; a < Items.plats[i].allergènes.length; a++) {
-            allergenImage = allergenImage + '<img src="' + Items.plats[i].allergènes[a] + '">'
+        let CardFiltreValue = Items.plats[i].allergènes;
+
+        console.log(Items.plats[i])
+
+        if (Filtre(["assets/pictures/allergen/du-ble.png"], CardFiltreValue)) {
+            let allergenImage = "";
+            for (let a = 0; a < Items.plats[i].allergènes.length; a++) {
+                allergenImage = allergenImage + '<img src="' + Items.plats[i].allergènes[a] + '">'
+            }
+
+
+            parent.innerHTML = parent.innerHTML +
+                '<div class="card mode">' +
+                '<div class="cardheader mode">' +
+                '<figure>' +
+                '<img class="mode" src="' + Items.plats[i].image + '" alt="">' +
+                '</figure>' +
+                '</div>' +
+                '<div class="cardmain mode">' +
+                '<div class="title mode">' + Items.plats[i].nom + '</div>' +
+                '<div class="allergen mode ">' + allergenImage + '</div>' +
+                '<div class="diet mode ">Lorem ipsum dolor sit amet</div>' +
+                '</div>' +
+                '<div class="cardfooter mode">' +
+                '<button class="btnpanier mode" id="'+i+'">Panier</button>' +
+                '<div class="price mode">' + Items.plats[i].prix + '</div>' *
+                '</div>' +
+                '</div>';
         }
+    }
+}
 
+function Filtre(_MyCondition,_Value) {
+    let pass = false;
 
-        parent.innerHTML = parent.innerHTML +
-            '<div class="card mode">'+
-            '<div class="cardheader mode">'+
-            '<figure>'+
-            '<img class="mode" src="' + Items.plats[i].image + '" alt="">'+
-            '</figure>'+
-            '</div>'+
-            '<div class="cardmain mode">'+
-            '<div class="title mode">' + Items.plats[i].nom + '</div>' +
-            '<div class="allergen mode ">' + allergenImage +'</div>'+
-            '<div class="diet mode ">Lorem ipsum dolor sit amet</div>'+
-            '</div>'+
-            '<div class="cardfooter mode">'+
-            '<button class="btnpanier mode">Panier</button>'+
-            '<div class="price mode">' + Items.plats[i].prix + '</div>'*
-            '</div>'+
-            '</div>'
-            ;
+    for (let i = 0; i < _MyCondition.length; i++){
+        for (let a = 0; a < _Value.length; a++) {
+            if (_MyCondition[i] == _Value[a]) {
+                pass = true;
+                console.log("pass :" + _MyCondition[i] + " == " + _Value[a])
+            }
+        }
     }
 
+    return pass;
 }
 
 
@@ -99,6 +108,7 @@ function Set(name, value) { // sauvegarde une data dans les cookies du site
     return JSON.parse(localStorage.getItem(name));
 }
 
+
 /*
 function FindClass(_parent,_class) {
     for (let child of _parent.children) {
@@ -109,10 +119,30 @@ function FindClass(_parent,_class) {
 }
 */
 
-function AddEventOnBtn() {
+
+function AddEventOnBtn() { 
     let btnpanier = document.getElementsByClassName("btnpanier");
     for (let i = 0; i < btnpanier.length; i++) {
         btnpanier[i].addEventListener('click', AddShop);
-        btnpanier[i].id = i;
     }
+}
+
+function AddEventOnBtnDark() {
+    let btnswitch = document.getElementById("switchMode");
+    btnswitch.addEventListener('click', switchMode);
+}
+
+
+const AddShop = (e) => {
+    _shop = Array.from(Get("shop", []));
+
+    console.log("Add to shop: " + e.currentTarget.id);
+
+    _shop.push(e.currentTarget.id);
+    Set("shop", _shop);
+    Shop = Array.from(Get("shop", []));
+}
+
+const switchMode = (e) => {
+    ChangeMode();
 }
