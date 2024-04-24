@@ -73,7 +73,7 @@
             "prix": "6€",
             "image": "assets/pictures/food/fullenglish.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": "omnivore",
+            "regimealimentaire": ["omnivore"],
             "catégorie" : ["pain grillé", "oeufs"]
         },
         {
@@ -105,7 +105,7 @@
             "prix": "7€",
             "image": "assets/pictures/food/salmontoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/poisson.png"],
-            "regimealimentaire": "omnivore",
+            "regimealimentaire": ["omnivore"],
             "catégorie" : "pain grillé"
         },
         {
@@ -177,7 +177,7 @@
             "prix": "6€",
             "image": "assets/pictures/food/salmonbagel.jpg",
             "allergènes": ["assets/pictures/allergen/poisson.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": "omnivore",
+            "regimealimentaire": ["omnivore"],
             "catégorie" : "bagels"
         },
         {
@@ -185,7 +185,7 @@
             "prix": "5€",
             "image": "assets/pictures/food/hamcheesebagel.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": "omnivore",
+            "regimealimentaire": ["omnivore"],
             "catégorie" : "bagels"
         },
         {
@@ -193,7 +193,7 @@
             "prix": "5€",
             "image": "assets/pictures/food/hambagel.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": "omnivore" ,
+            "regimealimentaire": ["omnivore"] ,
             "catégorie" : "bagels"
         },
         

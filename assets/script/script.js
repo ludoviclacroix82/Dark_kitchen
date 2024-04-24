@@ -44,12 +44,17 @@ function ReloadCard(Items) {
 
         let CardFiltreValue = Items.plats[i].allergènes.concat(Items.plats[i].regimealimentaire);
 
-        console.log(CardFiltreValue);
+        //console.log(CardFiltreValue);
 
         if (Filtre(["All"], CardFiltreValue)) {
             let allergenImage = "";
             for (let a = 0; a < Items.plats[i].allergènes.length; a++) {
                 allergenImage = allergenImage + '<img src="' + Items.plats[i].allergènes[a] + '">'
+            }
+
+            let Diet = "";
+            for (let a = 0; a < Items.plats[i].regimealimentaire.length; a++) {
+                Diet = Diet + '[' + Items.plats[i].regimealimentaire[a] + '] '
             }
 
 
@@ -63,7 +68,7 @@ function ReloadCard(Items) {
                 '<div class="cardmain mode">' +
                 '<div class="title mode">' + Items.plats[i].nom + '</div>' +
                 '<div class="allergen mode ">' + allergenImage + '</div>' +
-                '<div class="diet mode ">Lorem ipsum dolor sit amet</div>' +
+                '<div class="diet mode ">' + Diet +'</div>' +
                 '</div>' +
                 '<div class="cardfooter mode">' +
                 '<button class="btnpanier mode" id="'+i+'">Panier</button>' +
@@ -81,7 +86,7 @@ function Filtre(_MyCondition,_Value) {
         for (let a = 0; a < _Value.length; a++) {
             if (_MyCondition[i] == _Value[a] || _MyCondition[i] == "All") {
                 pass = true;
-                console.log("pass :" + _MyCondition[i] + " == " + _Value[a])
+                //console.log("pass :" + _MyCondition[i] + " == " + _Value[a])
             }
         }
     }
