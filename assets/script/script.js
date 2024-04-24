@@ -19,9 +19,19 @@ async function LoadShopItemsOnCard(first) {
     AddEventOnBtn();
     AddEventOnBtnDark();
     LoadDarkMode();
+
+    let logo = document.getElementsByClassName("logo");
+    logo[0].addEventListener('click', logoclick);
 }
 
+let nbrClickLogo = 0;
+
 LoadShopItems(true);
+
+
+
+
+
 
 
 function ChangeMode() {
@@ -195,7 +205,6 @@ function Filtre(_MyCondition,_Value) {
         }
         if (Check) { pass = false; }
     }
-
     return pass;
 }
 
@@ -298,4 +307,16 @@ const rmvShopItem = (e) => {
     Shop = Array.from(Get("shop", []));
 
     LoadShopItemsOnCard();
+}
+
+const logoclick = (e) => {
+    nbrClickLogo++;
+    if (nbrClickLogo >= 3) {
+        e.currentTarget.style = "transition: transform 1s;transform: rotate(360deg);"
+    }
+
+    if (nbrClickLogo >= 6) {
+        nbrClickLogo = 0;
+        e.currentTarget.style = "transition: transform 1s;transform: rotate(0deg);"
+    }
 }
