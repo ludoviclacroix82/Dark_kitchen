@@ -157,7 +157,11 @@ main #cards .card .cardmain .title {
   width: 80%;
   height: 40%;
   padding: 5px 0;
-  font-size: 1.5rem;
+  font-size: 3.5vh;
+  line-height: 3.7vh;
+}
+main #cards .card .cardmain .title .title:first-letter {
+  text-transform: uppercase;
 }
 main #cards .card .cardmain .allergen {
   width: 80%;
@@ -183,15 +187,17 @@ main #cards .card .cardmain .diet img {
   height: 2rem;
 }
 main #cards .card .cardfooter {
-  width: 100%;
+  width: 90%;
   height: 10%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 main #cards .card .cardfooter button {
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 3rem;
 }
 main #cards .card .cardfooter .price {
   font-size: 2rem;
