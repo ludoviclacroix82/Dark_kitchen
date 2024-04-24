@@ -3,7 +3,7 @@ $lightgray: #F2F1EF;
 $cream: #F6E8D6;
 $pink: #FCD2BA;
 $middlebrown: #DEB083;
-$darkgray: #797770;
+$darkgray: #2e2e2b;
 $lightgreen: #EDF3D0;
 
 //RESET
@@ -57,8 +57,6 @@ $lightgreen: #EDF3D0;
   body {
     width:100vw;
     padding: 1rem;
-    background-color:$darkgray;
-    color:$lightgray;
     display: grid;
     column-gap:1rem;
     row-gap:1rem;
@@ -66,6 +64,16 @@ $lightgreen: #EDF3D0;
     margin-block-end:5rem;
     margin-left:auto;
     margin-right:auto;
+
+    .Light {
+      background-color:$lightgray;
+      color:$darkgray;
+    }
+
+    .Dark {
+      background-color:$darkgray;
+      color:$lightgray;
+    }
 
         @media only screen and (max-width: 600px) {
             grid-template-columns: 1fr;
@@ -75,14 +83,22 @@ $lightgreen: #EDF3D0;
             grid-template-columns: 1fr 1fr;
         }
 
-    
-  }
-
   header {
     height:40vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    }
+
+  main {
+    h1 {
+      text-align:center;
+      font-weight: 100;
+      margin-top:-1rem;
+    }
+  }
 
   }
+
+
 

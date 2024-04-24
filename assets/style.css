@@ -54,8 +54,6 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   width: 100vw;
   padding: 1rem;
-  background-color: #797770;
-  color: #F2F1EF;
   display: grid;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -64,6 +62,14 @@ body {
   margin-block-end: 5rem;
   margin-left: auto;
   margin-right: auto;
+}
+body .Light {
+  background-color: #F2F1EF;
+  color: #2e2e2b;
+}
+body .Dark {
+  background-color: #2e2e2b;
+  color: #F2F1EF;
 }
 @media only screen and (max-width: 600px) {
   body {
@@ -75,10 +81,14 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-header {
+body header {
   height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body main h1 {
+  text-align: center;
+  font-weight: 100;
+  margin-top: -1rem;
 }/*# sourceMappingURL=style.css.map */
