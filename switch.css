@@ -14,7 +14,6 @@ section input[type=checkbox] {
 }
 section label {
   cursor: pointer;
-  text-indent: -9999px;
   width: 60px;
   height: 30px;
   background-color: rgb(255, 255, 255);
