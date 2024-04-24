@@ -33,7 +33,7 @@
             "prix": "0.75",
             "image": "assets/pictures/food/painauchocolat.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png", "assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie": "viennoiseries"
          }, 
          {
@@ -41,7 +41,7 @@
             "prix": "0.75",
             "image": "assets/pictures/food/croissant.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png", "assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "viennoiseries"
         },
         {
@@ -49,7 +49,7 @@
             "prix": "3",
             "image": "assets/pictures/food/omelet.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "oeufs"
         },
         {
@@ -57,7 +57,7 @@
             "prix": "2",
             "image": "assets/pictures/food/sunnysideup.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/vegetarien.png","assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "oeufs"
         },
         {
@@ -65,7 +65,7 @@
             "prix": "3",
             "image": "assets/pictures/food/benedict.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/vegetarien.png","assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "oeufs"
         }, 
         {
@@ -73,7 +73,7 @@
             "prix": "6",
             "image": "assets/pictures/food/fullenglish.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire": [],
             "catégorie" : ["pain grillé", "oeufs"]
         },
         {
@@ -81,7 +81,7 @@
             "prix": "6",
             "image": "assets/pictures/food/avocadotoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png"],
-            "regimealimentaire": [ "assets/pictures/eating/du-boeuf.png", "assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "pain grillé"
         },
         {
@@ -89,7 +89,7 @@
             "prix": "4",
             "image": "assets/pictures/food/marmeladetoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png"],
-            "regimealimentaire":[ "assets/pictures/eating/vegetarien.png","assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire":["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "pain grillé"
         },
         {
@@ -97,7 +97,7 @@
             "prix": "4",
             "image":"assets/pictures/food/cheesetoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "pain grillé"
          },
          {
@@ -105,7 +105,7 @@
             "prix": "7",
             "image": "assets/pictures/food/salmontoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/poisson.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire": [],
             "catégorie" : "pain grillé"
         },
         {
@@ -113,7 +113,7 @@
             "prix": "3",
             "image": "assets/pictures/food/coffee.jpg",
             "allergènes": [],
-            "regimealimentaire": ["assets/pictures/eating/vegetarien.png","assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "boissons"
         },
         {
@@ -121,7 +121,7 @@
             "prix": "3",
             "image": "assets/pictures/food/tea.jpg",
             "allergènes": [],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "boissons"
         },
         {
@@ -129,7 +129,7 @@
             "prix": "3",
             "image": "assets/pictures/food/hotcocoa.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "boissons"
         },
         {
@@ -137,7 +137,7 @@
             "prix": "3",
             "image": "assets/pictures/food/orangejuice.jpg",
             "allergènes": [],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "boissons"
         },
         {
@@ -145,7 +145,7 @@
             "prix": "6",
             "image": "assets/pictures/food/fruitsalad.jpg",
             "allergènes": [],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "fruits"
         },
         {
@@ -153,7 +153,7 @@
             "prix": "6",
             "image": "assets/pictures/food/fruitoats.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "fruits"
         },
         {
@@ -161,7 +161,7 @@
             "prix": "6",
             "image": "assets/pictures/food/fruitpancakes.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "fruits"
         },
         {
@@ -169,7 +169,7 @@
             "prix": "5",
             "image": "assets/pictures/food/cheesebagel.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png", "assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "bagels"
         },
         {
@@ -177,7 +177,7 @@
             "prix": "6",
             "image": "assets/pictures/food/salmonbagel.jpg",
             "allergènes": ["assets/pictures/allergen/poisson.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire": [],
             "catégorie" : "bagels"
         },
         {
@@ -185,7 +185,7 @@
             "prix": "5",
             "image": "assets/pictures/food/hamcheesebagel.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png"],
+            "regimealimentaire": [],
             "catégorie" : "bagels"
         },
         {
@@ -193,7 +193,7 @@
             "prix": "5",
             "image": "assets/pictures/food/hambagel.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png"] ,
+            "regimealimentaire": [] ,
             "catégorie" : "bagels"
         },
         
@@ -202,7 +202,7 @@
             "prix": "3",
             "image": "assets/pictures/food/vanillamuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire":  ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire":  ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "muffins"
         },
         {
@@ -210,7 +210,7 @@
             "prix": "3",
             "image": "assets/pictures/food/blueberrymuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire":  ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire":  ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "muffins"
         },
         {
@@ -218,7 +218,7 @@
             "prix": "3",
             "image": "assets/pictures/food/chocolatemuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire":  ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire":  ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "muffins"
         },
         {
@@ -226,7 +226,7 @@
             "prix": "5",
             "image": "assets/pictures/food/frenchtoast.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "divers"
         },
         {
@@ -234,7 +234,7 @@
             "prix": "5",
             "image":"assets/pictures/food/crepes.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "divers"
         },
         {
@@ -242,7 +242,7 @@
             "prix": "3",
             "image":"assets/pictures/food/donuts.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "divers"
         },
         {
@@ -250,7 +250,7 @@
             "prix": "4",
             "image": "assets/pictures/food/muesli.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/amande.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "divers"
         },
         {
@@ -258,7 +258,7 @@
             "prix": "4",
             "image":"assets/pictures/food/bananabread.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png", "assets/pictures/allergen/amande.png"],
-            "regimealimentaire": ["assets/pictures/eating/du-boeuf.png","assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
             "catégorie" : "divers"
         }
 
