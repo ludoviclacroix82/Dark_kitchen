@@ -29,7 +29,7 @@
     "plats": [
 
         {
-            "nom": "pain au chocolat",
+            "nom": "Pain au chocolat",
             "prix": "0.75",
             "image": "assets/pictures/food/painauchocolat.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png", "assets/pictures/allergen/oeuf.png"],
@@ -37,7 +37,7 @@
             "catégorie": "viennoiseries"
          }, 
          {
-            "nom": "croissant",
+            "nom": "Croissant",
             "prix": "0.75",
             "image": "assets/pictures/food/croissant.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png", "assets/pictures/allergen/oeuf.png"],
@@ -45,7 +45,7 @@
             "catégorie" : "viennoiseries"
         },
         {
-            "nom": "omelette",
+            "nom": "Omelette",
             "prix": "3",
             "image": "assets/pictures/food/omelet.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
@@ -53,7 +53,7 @@
             "catégorie" : "oeufs"
         },
         {
-            "nom": "oeufs sur le plat",
+            "nom": "Oeufs sur le plat",
             "prix": "2",
             "image": "assets/pictures/food/sunnysideup.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
@@ -61,7 +61,7 @@
             "catégorie" : "oeufs"
         },
         {
-            "nom": "oeufs bénédicte",
+            "nom": "Oeufs bénédicte",
             "prix": "3",
             "image": "assets/pictures/food/benedict.jpg",
             "allergènes": ["assets/pictures/allergen/oeuf.png"],
@@ -69,7 +69,7 @@
             "catégorie" : "oeufs"
         }, 
         {
-            "nom": "toasts avec oeufs et saucisses",
+            "nom": "Toasts avec oeufs et saucisses",
             "prix": "6",
             "image": "assets/pictures/food/fullenglish.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -77,7 +77,7 @@
             "catégorie" : ["pain grillé", "oeufs"]
         },
         {
-            "nom": "toasts à l'avocat",
+            "nom": "Toasts à l'avocat",
             "prix": "6",
             "image": "assets/pictures/food/avocadotoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png"],
@@ -85,7 +85,7 @@
             "catégorie" : "pain grillé"
         },
         {
-            "nom": "toasts à la confiture",
+            "nom": "Toasts à la confiture",
             "prix": "4",
             "image": "assets/pictures/food/marmeladetoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png"],
@@ -93,7 +93,7 @@
             "catégorie" : "pain grillé"
         },
         {
-            "nom": "toasts avec du fromage",
+            "nom": "Toasts avec du fromage",
             "prix": "4",
             "image":"assets/pictures/food/cheesetoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/lait.png"],
@@ -101,7 +101,7 @@
             "catégorie" : "pain grillé"
          },
          {
-            "nom": "toast au saumon fumé",
+            "nom": "Toast au saumon fumé",
             "prix": "7",
             "image": "assets/pictures/food/salmontoast.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/poisson.png"],
@@ -109,7 +109,7 @@
             "catégorie" : "pain grillé"
         },
         {
-            "nom": "café",
+            "nom": "Café",
             "prix": "3",
             "image": "assets/pictures/food/coffee.jpg",
             "allergènes": [],
@@ -117,7 +117,7 @@
             "catégorie" : "boissons"
         },
         {
-            "nom": "thé",
+            "nom": "Thé",
             "prix": "3",
             "image": "assets/pictures/food/tea.jpg",
             "allergènes": [],
@@ -125,7 +125,7 @@
             "catégorie" : "boissons"
         },
         {
-            "nom": "cacao",
+            "nom": "Cacao",
             "prix": "3",
             "image": "assets/pictures/food/hotcocoa.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png"],
@@ -133,7 +133,7 @@
             "catégorie" : "boissons"
         },
         {
-            "nom": "jus d'orange frais",
+            "nom": "Jus d'orange frais",
             "prix": "3",
             "image": "assets/pictures/food/orangejuice.jpg",
             "allergènes": [],
@@ -141,7 +141,7 @@
             "catégorie" : "boissons"
         },
         {
-            "nom": "salade de fruits de saisons",
+            "nom": "Salade de fruits de saisons",
             "prix": "6",
             "image": "assets/pictures/food/fruitsalad.jpg",
             "allergènes": [],
@@ -149,7 +149,7 @@
             "catégorie" : "fruits"
         },
         {
-            "nom": "flocons d'avoine avec fruits de saisons",
+            "nom": "Flocons d'avoine avec fruits de saisons",
             "prix": "6",
             "image": "assets/pictures/food/fruitoats.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png"],
@@ -157,7 +157,7 @@
             "catégorie" : "fruits"
         },
         {
-            "nom": "pancakes avec fruits de saisons",
+            "nom": "Pancakes avec fruits de saisons",
             "prix": "6",
             "image": "assets/pictures/food/fruitpancakes.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -165,7 +165,7 @@
             "catégorie" : "fruits"
         },
         {
-            "nom": "bagel au fromage",
+            "nom": "Bagel au fromage",
             "prix": "5",
             "image": "assets/pictures/food/cheesebagel.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -173,7 +173,7 @@
             "catégorie" : "bagels"
         },
         {
-            "nom": "bagel au saumon",
+            "nom": "Bagel au saumon",
             "prix": "6",
             "image": "assets/pictures/food/salmonbagel.jpg",
             "allergènes": ["assets/pictures/allergen/poisson.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -181,7 +181,7 @@
             "catégorie" : "bagels"
         },
         {
-            "nom": "bagel au jambon et au fromage",
+            "nom": "Oeufs bénédicte",
             "prix": "5",
             "image": "assets/pictures/food/hamcheesebagel.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -189,7 +189,7 @@
             "catégorie" : "bagels"
         },
         {
-            "nom": "bagel au jambon",
+            "nom": "Bagel au jambon",
             "prix": "5",
             "image": "assets/pictures/food/hambagel.jpg",
             "allergènes": ["assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -198,7 +198,7 @@
         },
         
         {
-            "nom": "muffin à la vanille",
+            "nom": "Muffin à la vanille",
             "prix": "3",
             "image": "assets/pictures/food/vanillamuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -206,7 +206,7 @@
             "catégorie" : "muffins"
         },
         {
-            "nom": "muffin à la myrtille",
+            "nom": "Muffin à la myrtille",
             "prix": "3",
             "image": "assets/pictures/food/blueberrymuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -214,7 +214,7 @@
             "catégorie" : "muffins"
         },
         {
-            "nom": "muffin au chocolat",
+            "nom": "Muffin au chocolat",
             "prix": "3",
             "image": "assets/pictures/food/chocolatemuffin.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -222,7 +222,7 @@
             "catégorie" : "muffins"
         },
         {
-            "nom": "pain perdu",
+            "nom": "Pain perdu",
             "prix": "5",
             "image": "assets/pictures/food/frenchtoast.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -230,7 +230,7 @@
             "catégorie" : "divers"
         },
         {
-            "nom": "crêpes",
+            "nom": "Crêpes",
             "prix": "5",
             "image":"assets/pictures/food/crepes.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -238,7 +238,7 @@
             "catégorie" : "divers"
         },
         {
-            "nom": "donuts",
+            "nom": "Donuts",
             "prix": "3",
             "image":"assets/pictures/food/donuts.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png"],
@@ -246,7 +246,7 @@
             "catégorie" : "divers"
         },
         {
-            "nom": "muesli",
+            "nom": "Muesli",
             "prix": "4",
             "image": "assets/pictures/food/muesli.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/amande.png"],
@@ -254,7 +254,7 @@
             "catégorie" : "divers"
         },
         {
-            "nom": "banana bread",
+            "nom": "Banana bread",
             "prix": "4",
             "image":"assets/pictures/food/bananabread.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png", "assets/pictures/allergen/du-ble.png", "assets/pictures/allergen/oeuf.png", "assets/pictures/allergen/amande.png"],
