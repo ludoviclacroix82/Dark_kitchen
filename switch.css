@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 20px;
+}
+section input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  border: 1px solid #c0c0c0;
+}
+section label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  border: 1px solid #c0c0c0;
+}
+section label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+section input:checked + label {
+  background-color: #000000;
+  transition: background-color 0.8s;
+}
+section input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  background-color: #fff;
+  transition: background-color 0.8s;
+}
+section label:active:after {
+  width: 50px;
+}/*# sourceMappingURL=switch.css.map */
