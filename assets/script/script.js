@@ -28,7 +28,6 @@ function ChangeMode() {
             
             Set("mode", dark ? "Light" : "Dark");
         }
-
         check = light;
     }
 
@@ -43,11 +42,11 @@ function ReloadCard(Items) {
 
     for (let i = 0; i < Items.plats.length; i++) {
 
-        let CardFiltreValue = Items.plats[i].allergènes;
+        let CardFiltreValue = Items.plats[i].allergènes.concat(Items.plats[i].regimealimentaire);
 
-        console.log(Items.plats[i])
+        console.log(CardFiltreValue);
 
-        if (Filtre(["assets/pictures/allergen/du-ble.png"], CardFiltreValue)) {
+        if (Filtre(["All"], CardFiltreValue)) {
             let allergenImage = "";
             for (let a = 0; a < Items.plats[i].allergènes.length; a++) {
                 allergenImage = allergenImage + '<img src="' + Items.plats[i].allergènes[a] + '">'
@@ -80,7 +79,7 @@ function Filtre(_MyCondition,_Value) {
 
     for (let i = 0; i < _MyCondition.length; i++){
         for (let a = 0; a < _Value.length; a++) {
-            if (_MyCondition[i] == _Value[a]) {
+            if (_MyCondition[i] == _Value[a] || _MyCondition[i] == "All") {
                 pass = true;
                 console.log("pass :" + _MyCondition[i] + " == " + _Value[a])
             }
