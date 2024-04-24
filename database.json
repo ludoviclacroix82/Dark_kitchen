@@ -113,7 +113,7 @@
             "prix": "3",
             "image": "assets/pictures/food/coffee.jpg",
             "allergènes": [],
-            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": [],
             "catégorie" : "boissons"
         },
         {
@@ -121,7 +121,7 @@
             "prix": "3",
             "image": "assets/pictures/food/tea.jpg",
             "allergènes": [],
-            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": [],
             "catégorie" : "boissons"
         },
         {
@@ -129,7 +129,7 @@
             "prix": "3",
             "image": "assets/pictures/food/hotcocoa.jpg",
             "allergènes": ["assets/pictures/allergen/lait.png"],
-            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": [],
             "catégorie" : "boissons"
         },
         {
@@ -137,7 +137,7 @@
             "prix": "3",
             "image": "assets/pictures/food/orangejuice.jpg",
             "allergènes": [],
-            "regimealimentaire": ["assets/pictures/eating/vegetarien.png"],
+            "regimealimentaire": [],
             "catégorie" : "boissons"
         },
         {
