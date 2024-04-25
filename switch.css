@@ -21,6 +21,7 @@ section label {
   border-radius: 100px;
   position: relative;
   border: 1px solid #2a251f;
+  transition: background-color 0.8s;
 }
 section label:after {
   content: "";
