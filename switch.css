@@ -26,13 +26,13 @@ section label {
 section label:after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 5px;
   width: 30px;
   height: 20px;
   background-color: #2a251f;
   border-radius: 90px;
-  transition: 0.3s;
+  transition: 0.3s;  
 }
 section input:checked + label {
   background-color: #2a251f;
@@ -46,8 +46,8 @@ section input:checked + label:after {
   width: 30px;
   height: 20px;
 }
-section label:active:after {
-  width: 50px;
+section label:active:after{
+  width: 30px;
 }
 
 main input[type=checkbox] {
