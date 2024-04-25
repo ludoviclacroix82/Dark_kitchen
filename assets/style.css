@@ -83,8 +83,6 @@ body {
 body header {
   height: 40vh;
   display: flex;
-  justify-content: space-evenly;
-  align-items: space-evenly;
   padding: 5%;
 }
 @media only screen and (min-width: 600px) {
@@ -92,6 +90,8 @@ body header {
     width: 50%;
     flex-direction: column;
     height: 90vh;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 }
 body header .logo {
