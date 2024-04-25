@@ -32,11 +32,11 @@ section label:after {
   height: 20px;
   background-color: #2a251f;
   border-radius: 90px;
-  transition: 0.3s;  
+  transition: 0.3s ease-in-out;  
 }
 section input:checked + label {
   background-color: #2a251f;
-  transition: background-color 0.8s;
+  transition: background-color 0.8s ;
 }
 section input:checked + label:after {
   left: 55px;
