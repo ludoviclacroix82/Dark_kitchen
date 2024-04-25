@@ -11,11 +11,13 @@ $lightgreen: #EDF3D0;
 %Light {
   background-color:$lightgray;
   color:$darkgray;
+  transition: all ease-in-out 1s;
 }
 
 %Dark {
   background-color:$darkgray;
   color:$lightgray;
+  transition: all ease-in-out 1s;
 }
 
 //RESET
@@ -233,6 +235,46 @@ $lightgreen: #EDF3D0;
             }
     
         }    
+    }
+  }
+}
+
+footer {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+  h2 {
+      text-align:center;
+  }
+
+  .followus {
+      display:flex;
+      flex-direction: row;
+      width: 50%;
+      margin-right:auto;
+      margin-left:auto;
+      justify-content:space-evenly;
+      padding: 5%;
+      color:$darkbrown;
+
+      // img {
+      //   filter: invert(9%) sepia(28%) saturate(487%) hue-rotate(353deg) brightness(92%) contrast(86%);
+      // }
+  }
+
+  .legal {
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:5%;
+    
+    a {
+      text-decoration:none;
+    color: $darkbrown;
     }
   }
 }

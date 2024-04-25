@@ -2,11 +2,13 @@
 body .Light {
   background-color: #F2F1EF;
   color: #2e2e2b;
+  transition: all ease-in-out 1s;
 }
 
 body .Dark {
   background-color: #2e2e2b;
   color: #F2F1EF;
+  transition: all ease-in-out 1s;
 }
 
 /*
@@ -206,4 +208,36 @@ main #cards .card .cardfooter .price {
 main #cards .card .cardfooter .price:after {
   content: "€";
   margin-left: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer h2 {
+  text-align: center;
+}
+footer .followus {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-evenly;
+  padding: 5%;
+  color: #2a251f;
+}
+footer .legal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+footer .legal a {
+  text-decoration: none;
+  color: #2a251f;
 }/*# sourceMappingURL=style.css.map */
