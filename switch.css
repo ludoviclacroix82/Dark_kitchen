@@ -37,11 +37,13 @@ section input:checked + label {
   background-color: #2a251f;
   transition: background-color 0.8s;
 }
-section input:checked + label:after {
+section section input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
-  background-color: #F6E8D6;
+  background-color: #F6E8D6 !important;
   transition: background-color 0.8s;
+  width: 30px;
+  height: 20px;
 }
 section label:active:after {
   width: 50px;
