@@ -83,8 +83,8 @@ body {
 body header {
   height: 40vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: space-evenly;
   padding: 5%;
 }
 @media only screen and (min-width: 600px) {
@@ -117,6 +117,7 @@ main {
 }
 main #filters {
   display: flex;
+  justify-content: center;
 }
 @media only screen and (min-width: 600px) {
   main #filters {
