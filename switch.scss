@@ -48,7 +48,7 @@ section{
         transition: background-color 0.8s;
     }
     
-    section input:checked + label:after {
+    input:checked + label:after {
         left: calc(100% - 5px);
         transform: translateX(-100%);
         background-color: #F6E8D6 !important;
