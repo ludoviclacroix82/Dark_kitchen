@@ -59,3 +59,21 @@ section{
         width: 50px;
     }
 }
+main {
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden; 
+        border: 1px solid #c0c0c0;       
+    }  
+    label{
+        width: 50px;
+        height: 50px;
+        filter: grayscale(0);
+        transition: filter 0.8s;
+    }
+    input:checked + label {
+        filter: grayscale(100);
+        transition: filter 0.8s;
+    }
+}
