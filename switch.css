@@ -28,7 +28,7 @@ section label:after {
   position: absolute;
   top: 4px;
   left: 5px;
-  width: 30px;
+  width: 20px;
   height: 20px;
   background-color: #2a251f;
   border-radius: 90px;
@@ -39,15 +39,15 @@ section input:checked + label {
   transition: background-color 0.8s;
 }
 section input:checked + label:after {
-  left: calc(100% - 5px);
+  left: 55px;
   transform: translateX(-100%);
   background-color: #F6E8D6 !important;
   transition: background-color 0.8s;
-  width: 30px;
+  width: 20px;
   height: 20px;
 }
 section label:active:after{
-  width: 30px;
+  width: 20px;
 }
 
 main input[type=checkbox] {
