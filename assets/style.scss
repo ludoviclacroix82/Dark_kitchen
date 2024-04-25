@@ -92,20 +92,22 @@ $lightgreen: #EDF3D0;
         }
 
   header {
-    height:40vh;
+    height:50vh;
     display:flex;
     padding:5%;
+    flex-wrap:wrap;
 
     @media only screen and (min-width: 600px) {
       width:50%;
       flex-direction: column;
       height:90vh;
       justify-content: space-evenly;
-      align-items: flex-start;
+      align-items: center;
+      padding-top:0%;
   }
 
     .logo {
-      height : 30vh;
+      width:50%;
     }
 
     h1 {
@@ -113,12 +115,20 @@ $lightgreen: #EDF3D0;
       font-weight: 100;
       line-height: 1.8rem;
       margin-bottom: 2rem;
+      width:100%;
     }
+    }
+
+    #shoppingcart {
+      display:none;
     }
   }
 
   main {
     padding:5%; 
+    display:flex;
+    flex-direction:column;
+    width:100%;
 
     @media only screen and (min-width: 600px) {
       width:50%;
@@ -291,9 +301,16 @@ footer {
       padding: 5%;
       color:$darkbrown;
 
-      // img {
-      //   filter: invert(9%) sepia(28%) saturate(487%) hue-rotate(353deg) brightness(92%) contrast(86%);
-      // }
+      img {
+      &.Light {
+        filter: invert(9%) sepia(28%) saturate(487%) hue-rotate(353deg) brightness(92%) contrast(86%);
+      }
+
+      &.Dark {
+        filter: invert(90%) sepia(27%) saturate(135%) hue-rotate(351deg) brightness(97%) contrast(99%);
+      }
+      background:none !important;
+     }
   }
 
   .legal {
@@ -307,6 +324,10 @@ footer {
     a {
       text-decoration:none;
     color: $darkbrown;
+
+    &.Dark {
+      color:$cream;
+    }
     }
   }
 }

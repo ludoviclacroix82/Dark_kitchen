@@ -81,9 +81,10 @@ body {
   }
 }
 body header {
-  height: 40vh;
+  height: 50vh;
   display: flex;
   padding: 5%;
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 600px) {
   body header {
@@ -91,21 +92,29 @@ body header {
     flex-direction: column;
     height: 90vh;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    padding-top: 0%;
   }
 }
 body header .logo {
-  height: 30vh;
+  width: 50%;
 }
 body header h1 {
   text-align: center;
   font-weight: 100;
   line-height: 1.8rem;
   margin-bottom: 2rem;
+  width: 100%;
+}
+body #shoppingcart {
+  display: none;
 }
 
 main {
   padding: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 @media only screen and (min-width: 600px) {
   main {
@@ -263,6 +272,15 @@ footer .followus {
   padding: 5%;
   color: #2a251f;
 }
+footer .followus img {
+  background: none !important;
+}
+footer .followus img.Light {
+  filter: invert(9%) sepia(28%) saturate(487%) hue-rotate(353deg) brightness(92%) contrast(86%);
+}
+footer .followus img.Dark {
+  filter: invert(90%) sepia(27%) saturate(135%) hue-rotate(351deg) brightness(97%) contrast(99%);
+}
 footer .legal {
   text-align: center;
   display: flex;
@@ -274,4 +292,7 @@ footer .legal {
 footer .legal a {
   text-decoration: none;
   color: #2a251f;
+}
+footer .legal a.Dark {
+  color: #F6E8D6;
 }/*# sourceMappingURL=style.css.map */
