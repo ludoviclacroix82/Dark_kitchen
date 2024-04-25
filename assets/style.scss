@@ -71,7 +71,7 @@ $lightgreen: #EDF3D0;
   body {
     width:100vw;
     display: flex;
-    flex-direction: column;
+    
 
     .Light {
       @extend %Light;
@@ -82,11 +82,13 @@ $lightgreen: #EDF3D0;
     }
 
         @media only screen and (max-width: 600px) {
-            grid-template-columns: 1fr;
+            flex-direction: column;
         }
 
         @media only screen and (min-width: 600px) {
-            grid-template-columns: 1fr 1fr;
+            flex-direction:row;
+            flex-wrap: wrap;
+            overflow:hidden;
         }
 
   header {
@@ -96,14 +98,15 @@ $lightgreen: #EDF3D0;
     align-items: center;
     padding:5%;
 
+    @media only screen and (min-width: 600px) {
+      width:50%;
+      flex-direction: column;
+      height:90vh;
+  }
+
     .logo {
       height : 30vh;
     }
-    }
-  }
-
-  main {
-    padding:5%; 
 
     h1 {
       text-align:center;
@@ -111,9 +114,25 @@ $lightgreen: #EDF3D0;
       line-height: 1.8rem;
       margin-bottom: 2rem;
     }
+    }
+  }
+
+  main {
+    padding:5%; 
+
+    @media only screen and (min-width: 600px) {
+      width:50%;
+      height:90vh;
+      overflow:hidden;
+      padding-top:2%;
+  }
 
     #filters {
       display:flex;
+
+      @media only screen and (min-width: 600px) {
+        margin-bottom:1%;
+    }
   
       .filter {
         label {
@@ -133,6 +152,12 @@ $lightgreen: #EDF3D0;
       flex-direction:column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (min-width: 600px) {
+          height:100%;
+          overflow-y:scroll;
+          justify-content: flex-start;
+      }
   
       &.Light {
         border: solid 3px $darkbrown;
@@ -152,6 +177,8 @@ $lightgreen: #EDF3D0;
         flex-direction: column;
         border-radius: 10%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        
     
         .cardheader{
           border-radius: 10%;
@@ -244,6 +271,10 @@ footer {
   flex-direction: column;
   justify-content:center;
   align-items:center;
+
+  @media only screen and (min-width: 600px) {
+    width:100%;
+}
 
   h2 {
       text-align:center;

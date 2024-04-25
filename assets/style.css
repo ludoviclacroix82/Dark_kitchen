@@ -67,16 +67,17 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   width: 100vw;
   display: flex;
-  flex-direction: column;
 }
 @media only screen and (max-width: 600px) {
   body {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 600px) {
   body {
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
 }
 body header {
@@ -86,21 +87,41 @@ body header {
   align-items: center;
   padding: 5%;
 }
+@media only screen and (min-width: 600px) {
+  body header {
+    width: 50%;
+    flex-direction: column;
+    height: 90vh;
+  }
+}
 body header .logo {
   height: 30vh;
 }
-
-main {
-  padding: 5%;
-}
-main h1 {
+body header h1 {
   text-align: center;
   font-weight: 100;
   line-height: 1.8rem;
   margin-bottom: 2rem;
 }
+
+main {
+  padding: 5%;
+}
+@media only screen and (min-width: 600px) {
+  main {
+    width: 50%;
+    height: 90vh;
+    overflow: hidden;
+    padding-top: 2%;
+  }
+}
 main #filters {
   display: flex;
+}
+@media only screen and (min-width: 600px) {
+  main #filters {
+    margin-bottom: 1%;
+  }
 }
 main #filters .filter label {
   height: 2rem;
@@ -115,6 +136,13 @@ main #cards {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 600px) {
+  main #cards {
+    height: 100%;
+    overflow-y: scroll;
+    justify-content: flex-start;
+  }
 }
 main #cards.Light {
   border: solid 3px #2a251f;
@@ -215,6 +243,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 600px) {
+  footer {
+    width: 100%;
+  }
 }
 footer h2 {
   text-align: center;
