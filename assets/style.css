@@ -289,6 +289,12 @@ footer .legal {
   align-items: center;
   padding-bottom: 5%;
 }
+@media only screen and (min-width: 600px) {
+  footer .legal {
+    width: 100%;
+    flex-direction: row;
+  }
+}
 footer .legal a {
   text-decoration: none;
   color: #2a251f;
