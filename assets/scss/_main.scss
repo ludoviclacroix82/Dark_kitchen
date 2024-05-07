@@ -1,0 +1,54 @@
+  main {
+    padding: 5vw;
+    display: flex;
+    flex-direction: row;
+
+    //width: 100%;
+
+    .Items{
+      width: 75%;
+
+      .ItmesShop{
+      display: flex;
+      flex-direction: row;
+      }
+    }
+
+    .shoppingcart{
+      width: 35%;
+      //display:none;
+    }
+
+    @media only screen and (min-width: 600px) {
+      //width: 50%;
+      //height: 90vh;
+      //overflow: hidden;
+      padding-top: 2%;
+    }
+
+    #filters {
+      display: flex;
+      justify-content: center;
+
+        margin: {
+            bottom: 2vw;
+            top: 1vw;
+          }
+
+      .filter {
+        margin: {
+          left: 1vw;
+          right: 1vw;
+        }
+        label {
+          width: 5vw;
+
+          transition: filter 0.3s ease-in-out;
+
+          &+input[type="checkbox"]:checked+& {
+            filter: grayscale(100%);
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,19 @@
+@import "./scss/_variable";
+@import "./scss/_header";
+@import "./scss/_main";
+@import "./scss/_footer";
+@import "./scss/_card";
+@import "./scss/_shoppingCard";
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+
+  .Light {
+    @extend %Light;
+  }
+        
+  .Dark {
+    @extend %Dark;
+  }
+}

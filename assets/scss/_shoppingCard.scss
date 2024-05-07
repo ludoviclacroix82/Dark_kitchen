@@ -1,0 +1,85 @@
+
+#shoppingcart {
+      padding: 1vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      border-radius: 15px;
+
+      margin-left: 2vw;
+
+      &.Light {
+        border: solid 3px $darkbrown;
+        background-color: $cream;
+      }
+
+      &.Dark {
+        border: solid 3px $cream;
+        background-color: $darkbrown;
+      }
+
+      #shopping{
+        
+      &.Light {
+          border: solid 3px $darkbrown;
+          background-color: $cream;
+        }
+      
+        &.Dark {
+          border: solid 3px $cream;
+          background-color: $darkbrown;
+        }
+
+        width: 100%;
+        border-radius: 15px;
+
+        h2{
+          font-size: 2vw;
+          padding: 0.5vw;
+        }
+
+        #total {
+          margin-top: 1vw;
+          margin-bottom: 1vw;
+          margin-left: 1vw;
+          font-size: 2vw;
+          
+                &.Light {
+                    background-color: $cream;
+                  }
+                
+                  &.Dark {
+                    background-color: $darkbrown;
+                  }
+        }
+
+        #btn_order,.btnShopRemove{
+          margin-bottom: 1vw;
+          margin-left: 1vw;
+          border-radius: 5px;
+          font-size: 1vw;
+
+          padding: {
+            left: 0.4vw;
+            right: 0.4vw;
+            top: 0.1vw;
+            bottom: 0.1vw;
+          };
+        }
+      }
+
+      #table{
+        
+        width: 100%;
+        border-collapse: collapse;
+        
+        td, th {
+          padding: 0.5vw;
+          border-top: solid 1px black;
+          border-bottom: solid 1px black;
+          
+        }
+      }
+      
+}

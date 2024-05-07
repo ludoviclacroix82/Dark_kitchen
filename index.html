@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="switch.css">
     <title>Early Bird - Where Mornings Begin.</title>
 </head>
 <body>
     <header class="mode">
         <section>
-            <input type="checkbox" id="switchMode" />
-            <label for="switchMode"></label>
-        </section>
         <img src="assets/pictures/header.png" alt="logo" class="logo">
-
+        </section>
+        <section>
         <h1>Early Bird : Where Mornings Begin.</h1><!--définir où le placer-->
+                <div class="DarkSwitch">
+                    <input type="checkbox" id="switchMode" />
+                    <label for="switchMode"></label>
+                </div>
+        </section>
+        <!-- <nav class="mode">
 
-        <nav class="mode">
-
-        </nav>
-        <div class="mode" id="shoppingcart">
-            <!-- the DOM is here-->
-        </div>
+        </nav> -->
     </header>
     <main class="mode">
+        <section class="Items">
         <div class="mode" id="filters">
             <input type="checkbox" class="filter" id="1">
             <label for="1"><img src="assets/pictures/allergen/amande.png" alt=""></label>
@@ -45,12 +45,18 @@
             <input type="checkbox" class="filter" id="10">
             <label for="10"><img src="assets/pictures/eating/vegetarien.png" alt=""></label>
         </div>
-        <section class="mode" id="cards">
+        <section class="mode ItmesShop" id="cards">
             <!-- the DOM is here-->
+        </section>
+        </section>
+        <section class="shoppingcart">
+            <div class="mode" id="shoppingcart">
+                <!-- the DOM is here-->
+            </div>
         </section>
     </main>
     <footer class="mode">
-        <h2>Follow us</h2>
+        <h2 class="mode">Follow us</h2>
         <div class="mode followus">
             <img src="assets/pictures/icons/icon-facebook-svg.svg" class="mode" alt="icon-facebook">
             <img src="assets/pictures/icons/icon-instagram-svg.svg" class="mode" alt="icon-instagram">
@@ -62,7 +68,6 @@
             <a href="#" class="mode">Mentions légales</a>
             <a href="#" class="mode">dark@kitchen.com</a>
         </div>
-        
     </footer>
     <script src="assets/script/script.js"></script>
 </body>

@@ -1,0 +1,386 @@
+@charset "UTF-8";
+body .Light {
+  background-color: #F2F1EF;
+  color: #2e2e2b;
+  transition: all ease-in-out 0.25s;
+}
+
+body .Dark {
+  background-color: #2e2e2b;
+  color: #F2F1EF;
+  transition: all ease-in-out 0.25s;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+* {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+header {
+  height: 20vw;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header.Light {
+  border-bottom: solid 3px #2a251f;
+}
+header.Dark {
+  border-bottom: solid 3px #F6E8D6;
+}
+header .logo {
+  width: 20vw;
+}
+header h1 {
+  margin-top: 6vw;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3vw;
+}
+
+main {
+  padding: 5vw;
+  display: flex;
+  flex-direction: row;
+}
+main .Items {
+  width: 75%;
+}
+main .Items .ItmesShop {
+  display: flex;
+  flex-direction: row;
+}
+main .shoppingcart {
+  width: 35%;
+}
+@media only screen and (min-width: 600px) {
+  main {
+    padding-top: 2%;
+  }
+}
+main #filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+}
+main #filters .filter {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+main #filters .filter label {
+  width: 5vw;
+  transition: filter 0.3s ease-in-out;
+}
+main #filters .filter label + input[type=checkbox]:checked + main #filters .filter label {
+  filter: grayscale(100%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer.Light {
+  border-top: solid 3px #2a251f;
+}
+footer.Dark {
+  border-top: solid 3px #F6E8D6;
+}
+footer h2 {
+  text-align: center;
+  margin-top: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+footer h2.Light {
+  border: solid 3px #2a251f;
+}
+footer h2.Dark {
+  border: solid 3px #F6E8D6;
+}
+footer .followus {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-evenly;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  color: #2a251f;
+}
+footer .followus img {
+  background: none !important;
+}
+footer .followus img.Light {
+  filter: invert(9%) sepia(28%) saturate(487%) hue-rotate(353deg) brightness(92%) contrast(86%);
+}
+footer .followus img.Dark {
+  filter: invert(90%) sepia(27%) saturate(135%) hue-rotate(351deg) brightness(97%) contrast(99%);
+}
+footer .legal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vw;
+  width: 100%;
+  flex-direction: row;
+}
+footer .legal a {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-decoration: none;
+  color: #2a251f;
+}
+footer .legal a.Dark {
+  color: #F6E8D6;
+}
+
+#cards {
+  padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+#cards.Light {
+  border: solid 3px #2a251f;
+  background-color: #F6E8D6;
+}
+#cards.Dark {
+  border: solid 3px #F6E8D6;
+  background-color: #2a251f;
+}
+#cards .card {
+  overflow: hidden;
+  width: 18vw;
+  height: 22vw;
+  display: flex;
+  margin-bottom: 5vh;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+#cards .card .cardheader {
+  border-radius: 10%;
+}
+#cards .card .cardheader figure {
+  width: 100%;
+  height: 175px;
+}
+#cards .card .cardheader figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+#cards .card:hover figure img {
+  width: 105%;
+  height: 105%;
+}
+#cards .card .cardmain {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+#cards .card .cardmain .title {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 10px;
+  font-size: 3.5vh;
+  text-align: center;
+  line-height: 3.7vh;
+}
+#cards .card .cardmain .title.Light {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#cards .card .cardmain .title.Dark {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#cards .card .cardmain .allergen {
+  width: 80%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cards .card .cardmain .allergen img {
+  height: 2rem;
+}
+#cards .card .cardmain .diet {
+  width: 80%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+#cards .card .cardmain .diet img {
+  height: 2rem;
+}
+#cards .card .cardfooter {
+  width: 100%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#cards .card .cardfooter button {
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  margin-right: 0.5rem;
+}
+#cards .card .cardfooter .price {
+  font-size: 2rem;
+}
+#cards .card .cardfooter .price:after {
+  content: "€";
+  margin-left: 0.5rem;
+}
+
+#shoppingcart {
+  padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 15px;
+  margin-left: 2vw;
+}
+#shoppingcart.Light {
+  border: solid 3px #2a251f;
+  background-color: #F6E8D6;
+}
+#shoppingcart.Dark {
+  border: solid 3px #F6E8D6;
+  background-color: #2a251f;
+}
+#shoppingcart #shopping {
+  width: 100%;
+  border-radius: 15px;
+}
+#shoppingcart #shopping.Light {
+  border: solid 3px #2a251f;
+  background-color: #F6E8D6;
+}
+#shoppingcart #shopping.Dark {
+  border: solid 3px #F6E8D6;
+  background-color: #2a251f;
+}
+#shoppingcart #shopping h2 {
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+#shoppingcart #shopping #total {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+#shoppingcart #shopping #total.Light {
+  background-color: #F6E8D6;
+}
+#shoppingcart #shopping #total.Dark {
+  background-color: #2a251f;
+}
+#shoppingcart #shopping #btn_order, #shoppingcart #shopping .btnShopRemove {
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  border-radius: 5px;
+  font-size: 1vw;
+  padding-left: 0.4vw;
+  padding-right: 0.4vw;
+  padding-top: 0.1vw;
+  padding-bottom: 0.1vw;
+}
+#shoppingcart #table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#shoppingcart #table td, #shoppingcart #table th {
+  padding: 0.5vw;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}/*# sourceMappingURL=styles.css.map */

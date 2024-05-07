@@ -87,7 +87,7 @@ function Checkbock() {
         a.addEventListener('click', Reload);
     }
 
-    console.log(Filter);
+    //console.log(Filter);
 
     return Filter;
 }
@@ -140,17 +140,15 @@ function ReloadShoppingCard(_json) {
 
     _globalHtml = '<div class="mode" id="shopping">' +
         '<h2>Liste de la commande</h2>' +
-        '<button class="mode" id="btn_close">x</button>' +
-        '<div class="panierheader">' +
-        '<div class="mode" id="table">' +
-        '<div>Produit</div>' +
-        '<div>Quantiter</div>' +
-        '<div>Prix</div>' +
-        '<div>Total</div>' +
-        '<div>Action</div>' +
-        '</div>' +
-        '</div>' +
-        '<div class="panierList" id="panierList">';
+        //'<button class="mode" id="btn_close">x</button>' +
+        //'<div class="panierheader">' +
+        '<table class="mode" id="table"><tr>' +
+        '<th>Produit</th>' +
+        '<th>Quantiter</th>' +
+        '<th>Prix</th>' +
+        '<th>Total</th>' +
+        '<th>Action</th>' +
+        '</tr>'
     
     let _panier = "";
 
@@ -170,18 +168,18 @@ function ReloadShoppingCard(_json) {
     let Tot = 0;
     for (let i = 0; i < _DrawItems.length; i++) { 
         _panier = _panier +
-            '<div class="mode" id="table1">' +
-            '<div>' + _json.plats[_DrawItems[i].id].nom +'</div>' +
-            '<div>' + _DrawItems[i].nbr +'</div>' +
-            '<div>' + _json.plats[_DrawItems[i].id].prix +'€</div>' +
-            '<div>' + (_DrawItems[i].nbr * _json.plats[_DrawItems[i].id].prix) + '€</div>' +
-            '<button class="mode btnShopRemove" id="' + _DrawItems[i].id + '">Remove</button>' +
-            '</div>';
+            '<tr class="mode" id="table1">' +
+            '<td>' + _json.plats[_DrawItems[i].id].nom +'</td>' +
+            '<td>' + _DrawItems[i].nbr +'</td>' +
+            '<td>' + _json.plats[_DrawItems[i].id].prix +'€</td>' +
+            '<td>' + (_DrawItems[i].nbr * _json.plats[_DrawItems[i].id].prix) + '€</td>' +
+            '<td><button class="mode btnShopRemove" id="' + _DrawItems[i].id + '">Remove</button></td>' +
+            '</tr>';
         
         Tot += (_DrawItems[i].nbr * _json.plats[_DrawItems[i].id].prix);
     }
 
-    _globalHtml = _globalHtml + _panier + '</div>'+
+    _globalHtml = _globalHtml + _panier + '</table>'+
         '<p class="mode" id="total">' + Tot + '€</p>'+
         '<button class="mode" id="btn_order">Commander</button>'+
         '</div>';
@@ -273,7 +271,7 @@ function AddEventOnBtnDark() {
 const AddShop = (e) => {
     _shop = Array.from(Get("shop", []));
 
-    console.log("Add to shop: " + e.currentTarget.id);
+    //console.log("Add to shop: " + e.currentTarget.id);
 
     _shop.push(e.currentTarget.id);
     Set("shop", _shop);
@@ -294,7 +292,7 @@ const Reload = (e) => {
 const rmvShopItem = (e) => {
     _shop = Array.from(Get("shop", []));
 
-    console.log("remove to shop: " + e.currentTarget.id);
+    //console.log("remove to shop: " + e.currentTarget.id);
 
     for (let i = 0; i < _shop.length; i++) {
         if (parseInt(_shop[i]) == parseInt(e.currentTarget.id)) {
